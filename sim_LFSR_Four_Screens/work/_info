@@ -1,0 +1,357 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_switch_btn
+vGame_Design
+Z0 !s110 1588197712
+!i10b 1
+!s100 @:FIGG1N8fhTKdKgW=mE92
+I2A8claKNQTgo_=PhFaa`m3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens
+w1588197708
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1588197712.000000
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@game_@design
+vGame_Design_tb
+Z7 !s110 1588197713
+!i10b 1
+!s100 gM>JQjR;DgkTMNH790^`V1
+Ij^`FMZoJ9JZ:TQj8LJ`bH3
+R1
+R2
+w1588197634
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design_tb.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z8 !s108 1588197713.000000
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design_tb.v|
+!i113 1
+R5
+R6
+n@game_@design_tb
+vGame_Design_TB
+!s110 1587256595
+!i10b 1
+!s100 ;e>=o];[Y?2[BeR<G8gjI0
+I[bgFOJRaVZi`TG1Wbm=?:2
+R1
+R2
+w1587173988
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design_TB.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design_TB.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1587256595.000000
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Design_TB.v|
+!i113 1
+R5
+R6
+n@game_@design_@t@b
+vGame_Top
+R7
+!i10b 1
+!s100 lCF:1Fn4DOJH[JG5U]Om91
+IAK=09Lzb2PR<m1OVm3O>l2
+R1
+R2
+w1587287186
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Top.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Top.v|
+!i113 1
+R5
+R6
+n@game_@top
+vGame_Top_tb
+R7
+!i10b 1
+!s100 2QG^SZF9M2jP<1NTW0k233
+I2H2UGX20gHC@=2Xi[AaOo3
+R1
+R2
+w1587287502
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Top_tb.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Top_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Top_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Game_Top_tb.v|
+!i113 1
+R5
+R6
+n@game_@top_tb
+vgate
+Z9 !s110 1588197714
+!i10b 1
+!s100 ez]gE^;BjC<Y[]53YNdH41
+ImHN2zPbOGdzz[WFO<N58z3
+R1
+R2
+w1587666303
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/gate.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/gate.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z10 !s108 1588197714.000000
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/gate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/gate.v|
+!i113 1
+R5
+R6
+vgate_tb
+R9
+!i10b 1
+!s100 WjC@?AcQO44JO8_a=C?:N1
+IC1o3E8bghPIV1^cPE7Z7_2
+R1
+R2
+w1587666641
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/gate_tb.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/gate_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/gate_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/gate_tb.v|
+!i113 1
+R5
+R6
+vLFSR_Bottom_Screens
+R0
+!i10b 1
+!s100 `31=IN4D?i5:0]I;Db7?A3
+IazPk]gHH3Jk;^jcdUS4Bg1
+R1
+R2
+w1587168974
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Bottom_Screens.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Bottom_Screens.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Bottom_Screens.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Bottom_Screens.v|
+!i113 1
+R5
+R6
+n@l@f@s@r_@bottom_@screens
+vLFSR_Bottom_Screens_TB
+R0
+!i10b 1
+!s100 DG>l0@I4O^;P_fH1XbK]O0
+IoQhnkI1P<B1fZH=^OJC8C2
+R1
+R2
+w1587284403
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Bottom_Screens_TB.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Bottom_Screens_TB.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Bottom_Screens_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Bottom_Screens_TB.v|
+!i113 1
+R5
+R6
+n@l@f@s@r_@bottom_@screens_@t@b
+vLFSR_Four_Screens
+R7
+!i10b 1
+!s100 23H@5k`[RXHcN0f0VdGcT1
+IC8N6ZYYN7aoVA^SO@[ahY1
+R1
+R2
+w1587334466
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Four_Screens.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Four_Screens.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Four_Screens.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Four_Screens.v|
+!i113 1
+R5
+R6
+n@l@f@s@r_@four_@screens
+vLFSR_Four_Screens_tb
+R7
+!i10b 1
+!s100 m=O_HFHff7nT73DBa]zkD3
+IfK2_K<d8]K89J_oelSgJ?0
+R1
+R2
+w1587334511
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Four_Screens_tb.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Four_Screens_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Four_Screens_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/LFSR_Four_Screens_tb.v|
+!i113 1
+R5
+R6
+n@l@f@s@r_@four_@screens_tb
+vlfsr_rng
+R7
+!i10b 1
+!s100 99YK6FmVT=THk=PJi>Qbe0
+IgadAThj07Z@?Yn5NNP6dh1
+R1
+R2
+w1586557958
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng.v|
+!i113 1
+R5
+R6
+vlfsr_rng_counter
+R7
+!i10b 1
+!s100 _cNjS`0aZE>PzAhmIf58h1
+IWFNfZ1?P<INm]0MkV2;9X3
+R1
+R2
+w1586964518
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng_counter.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng_counter.v
+L0 8
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng_counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng_counter.v|
+!i113 1
+R5
+R6
+vlfsr_rng_tb
+R0
+!i10b 1
+!s100 aUoU47jNIG>LIK=SjJRiK0
+IHB=PO_3oMZ0X1Ah9Cc:FS0
+R1
+R2
+w1586966606
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng_tb.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng_tb.v
+L0 10
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/lfsr_rng_tb.v|
+!i113 1
+R5
+R6
+vPlayer_Select_Screens
+R9
+!i10b 1
+!s100 545YV2gNPDThnNk96l0G?3
+IF9obfkX6=Y@4cL3nMNhcf2
+R1
+R2
+w1587291367
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Player_Select_Screens.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Player_Select_Screens.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Player_Select_Screens.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Player_Select_Screens.v|
+!i113 1
+R5
+R6
+n@player_@select_@screens
+vPlayer_Select_Screens_tb
+R9
+!i10b 1
+!s100 2JZRZVRS5VoW9___jNNcB3
+ISSZb]7>Mfz:4_1Wfae<e13
+R1
+R2
+w1587291229
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Player_Select_Screens_tb.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Player_Select_Screens_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Player_Select_Screens_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens/Player_Select_Screens_tb.v|
+!i113 1
+R5
+R6
+n@player_@select_@screens_tb
