@@ -1,0 +1,109 @@
+`timescale 10ns/100ps
+module RAM_tb();
+
+	reg rst, clk;
+	reg GO_State,HS_Check;
+	reg [2:0] userID;
+	reg [7:0] data_input;
+	
+	wire write_enable;
+	wire [7:0] data_output;
+	wire [2:0] addr_set;
+
+	wire [7:0] data_actual;
+
+	wire [7:0] high_score;
+
+
+	wire [2:0] check;
+	RAM_Controller DUT_RAM_Controller(GO_State, HS_Check, rst, clk, data_input, data_output, addr_set, userID, write_enable,data_actual, high_score,check);
+
+	RAM DUT_RAM(addr_set, clk, data_output, write_enable, data_actual);
+	
+	always begin
+	#10 clk = 1;
+	#10 clk = 0;
+	end
+
+
+	initial begin
+	rst = 1'b1;
+	GO_State = 1'b0;
+	HS_Check = 1'b0;
+	userID = 3'b000;
+	data_input = 8'b00000000;
+	#20;
+	rst = 1'b0;
+	#20;
+	@ (posedge clk);
+	rst = 1'b1;
+	#20;
+	GO_State = 1'b1;
+	userID = 3'b011;
+	data_input = 8'b00000100;
+	@ (posedge clk);
+	#20
+	GO_State = 1'b0;
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	HS_Check = 1'b1;
+	@ (posedge clk);
+	HS_Check = 1'b0;
+	#1000;
+
+	// Testing input of different user
+	#20;
+	GO_State = 1'b1;
+	userID = 3'b000;
+	data_input = 8'b00001000;
+	@ (posedge clk);
+	#20
+	GO_State = 1'b0;
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	HS_Check = 1'b1;
+	@ (posedge clk);
+	HS_Check = 1'b0;
+	#1000;
+
+	// Third
+	#20;
+	GO_State = 1'b1;
+	userID = 3'b000;
+	data_input = 8'b0000001;
+	@ (posedge clk);
+	#20
+	GO_State = 1'b0;
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	@ (posedge clk);
+	HS_Check = 1'b1;
+	@ (posedge clk);
+	HS_Check = 1'b0;
+	#1000;
+	
+
+
+	end
+
+
+
+endmodule
+

@@ -1,0 +1,36 @@
+Quartus Prime Archive log --	C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/FinalProject_ShastaGuideBotModelS.qarlog
+
+Archive:	C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/FinalProject_ShastaGuideBotModelS.qar
+Date:		Thu Apr 30 07:28:09 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/FinalProject_ShastaGuideBotModelS.qpf
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/FinalProject_ShastaGuideBotModelS.qsf
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/FinalProject_ShastaGuideBotModelS.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/Game_Design.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/LFSR_Four_Screens.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/MaxScore_TB.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/RAM.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/ROM_ID.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/ROM_PASS.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/Seven_Seg.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/access.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/access_tb.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/button_shaper.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/cien_ms.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/db/FinalProject_ShastaGuideBotModelS.cmp.rdb
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/digit_timer_mod.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/digit_timer_top.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/level_control.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/lfsr_rng.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/lfsr_rng_counter.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/lfsr_uno_ms.v
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/rom_id.mif
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/rom_pass.mif
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/uno_s.v
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

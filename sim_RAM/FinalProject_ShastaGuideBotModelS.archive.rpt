@@ -1,0 +1,100 @@
+Archive Project report for FinalProject_ShastaGuideBotModelS
+Thu Apr 30 07:28:09 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Thu Apr 30 07:28:09 2020 ;
+; Revision Name          ; FinalProject_ShastaGuideBotModelS     ;
+; Top-level Entity Name  ; FinalProject_ShastaGuideBotModelS     ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/FinalProject_ShastaGuideBotModelS.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'FinalProject_ShastaGuideBotModelS.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4830 megabytes
+    Info: Processing ended: Thu Apr 30 07:28:09 2020
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++--------------------------------------------------------------+
+; Files Archived                                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; access.v                                                     ;
+; access_tb.v                                                  ;
+; button_shaper.v                                              ;
+; c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf ;
+; cien_ms.v                                                    ;
+; db/FinalProject_ShastaGuideBotModelS.cmp.rdb                 ;
+; digit_timer_mod.v                                            ;
+; digit_timer_top.v                                            ;
+; FinalProject_ShastaGuideBotModelS.qpf                        ;
+; FinalProject_ShastaGuideBotModelS.qsf                        ;
+; FinalProject_ShastaGuideBotModelS.v                          ;
+; Game_Design.v                                                ;
+; level_control.v                                              ;
+; LFSR_Four_Screens.v                                          ;
+; lfsr_rng.v                                                   ;
+; lfsr_rng_counter.v                                           ;
+; lfsr_uno_ms.v                                                ;
+; MaxScore_TB.v                                                ;
+; RAM.v                                                        ;
+; rom_id.mif                                                   ;
+; ROM_ID.v                                                     ;
+; rom_pass.mif                                                 ;
+; ROM_PASS.v                                                   ;
+; Seven_Seg.v                                                  ;
+; uno_s.v                                                      ;
++--------------------------------------------------------------+
+
+
