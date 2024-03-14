@@ -1,0 +1,22 @@
+{C:/Users/E45T/Documents/Advanced Digital Design - Yuhua Chen/ADD_FINAL_PROJECT/sim_lfsr_rng/lfsr_rng_tb.v} {1 {vlog -work work -stats=none {C:/Users/E45T/Documents/Advanced Digital Design - Yuhua Chen/ADD_FINAL_PROJECT/sim_lfsr_rng/lfsr_rng_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lfsr_rng_tb
+
+Top level modules:
+	lfsr_rng_tb
+
+} {} {}} {C:/Users/E45T/Documents/Advanced Digital Design - Yuhua Chen/ADD_FINAL_PROJECT/sim_lfsr_rng/lfsr_rng_counter.v} {1 {vlog -work work -stats=none {C:/Users/E45T/Documents/Advanced Digital Design - Yuhua Chen/ADD_FINAL_PROJECT/sim_lfsr_rng/lfsr_rng_counter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lfsr_rng_counter
+
+Top level modules:
+	lfsr_rng_counter
+
+} {} {}} {C:/Users/E45T/Documents/Advanced Digital Design - Yuhua Chen/ADD_FINAL_PROJECT/sim_lfsr_rng/lfsr_rng.v} {1 {vlog -work work -stats=none {C:\Users\E45T\Documents\Advanced Digital Design - Yuhua Chen\ADD_FINAL_PROJECT\sim_lfsr_rng\lfsr_rng.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lfsr_rng
+
+Top level modules:
+	lfsr_rng
+
+} {} {}}
