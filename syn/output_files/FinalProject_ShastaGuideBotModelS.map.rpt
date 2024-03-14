@@ -1,0 +1,1225 @@
+Analysis & Synthesis report for FinalProject_ShastaGuideBotModelS
+Fri May 01 18:19:26 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. State Machine - |FinalProject_ShastaGuideBotModelS|access:access_top|nextState
+ 10. State Machine - |FinalProject_ShastaGuideBotModelS|access:access_top|state
+ 11. State Machine - |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitONE|configFlag
+ 12. State Machine - |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitTEN|configFlag
+ 13. State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|nextState
+ 14. State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|state
+ 15. State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|NextState
+ 16. State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|State
+ 17. State Machine - |FinalProject_ShastaGuideBotModelS|button_shaper:maxscore|State
+ 18. State Machine - |FinalProject_ShastaGuideBotModelS|button_shaper:gameplay|State
+ 19. State Machine - |FinalProject_ShastaGuideBotModelS|button_shaper:password|State
+ 20. Registers Removed During Synthesis
+ 21. General Register Statistics
+ 22. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 23. Source assignments for ROM_PASS:password_ROM|altsyncram:altsyncram_component|altsyncram_6aa1:auto_generated
+ 24. Source assignments for ROM_ID:id_ROM|altsyncram:altsyncram_component|altsyncram_13a1:auto_generated
+ 25. Source assignments for RAM:scores|altsyncram:altsyncram_component|altsyncram_7bf1:auto_generated
+ 26. Parameter Settings for User Entity Instance: button_shaper:password
+ 27. Parameter Settings for User Entity Instance: button_shaper:gameplay
+ 28. Parameter Settings for User Entity Instance: button_shaper:maxscore
+ 29. Parameter Settings for User Entity Instance: ROM_PASS:password_ROM|altsyncram:altsyncram_component
+ 30. Parameter Settings for User Entity Instance: ROM_ID:id_ROM|altsyncram:altsyncram_component
+ 31. Parameter Settings for User Entity Instance: RAM:scores|altsyncram:altsyncram_component
+ 32. Parameter Settings for User Entity Instance: Game_Design:game
+ 33. Parameter Settings for User Entity Instance: Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens
+ 34. Parameter Settings for User Entity Instance: level_control:difficulty_set
+ 35. Parameter Settings for User Entity Instance: access:access_top
+ 36. altsyncram Parameter Settings by Entity Instance
+ 37. Port Connectivity Checks: "digit_timer_top:game_timer|digit_timer_mod:digitTEN"
+ 38. Port Connectivity Checks: "Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|lfsr_rng:DUT_lfsr_rng|lfsr_rng_counter:DUT_lfsr_rng_counter"
+ 39. Post-Synthesis Netlist Statistics for Top Partition
+ 40. Elapsed Time Per Partition
+ 41. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri May 01 18:19:26 2020       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; FinalProject_ShastaGuideBotModelS           ;
+; Top-level Entity Name              ; FinalProject_ShastaGuideBotModelS           ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 690                                         ;
+;     Total combinational functions  ; 587                                         ;
+;     Dedicated logic registers      ; 336                                         ;
+; Total registers                    ; 336                                         ;
+; Total pins                         ; 76                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 344                                         ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                            ;
++------------------------------------------------------------------+-----------------------------------+-----------------------------------+
+; Option                                                           ; Setting                           ; Default Value                     ;
++------------------------------------------------------------------+-----------------------------------+-----------------------------------+
+; Device                                                           ; EP4CE115F29C7                     ;                                   ;
+; Top-level entity name                                            ; FinalProject_ShastaGuideBotModelS ; FinalProject_ShastaGuideBotModelS ;
+; Family name                                                      ; Cyclone IV E                      ; Cyclone V                         ;
+; Use smart compilation                                            ; Off                               ; Off                               ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                                ; On                                ;
+; Enable compact report table                                      ; Off                               ; Off                               ;
+; Restructure Multiplexers                                         ; Auto                              ; Auto                              ;
+; Create Debugging Nodes for IP Cores                              ; Off                               ; Off                               ;
+; Preserve fewer node names                                        ; On                                ; On                                ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable                            ; Enable                            ;
+; Verilog Version                                                  ; Verilog_2001                      ; Verilog_2001                      ;
+; VHDL Version                                                     ; VHDL_1993                         ; VHDL_1993                         ;
+; State Machine Processing                                         ; Auto                              ; Auto                              ;
+; Safe State Machine                                               ; Off                               ; Off                               ;
+; Extract Verilog State Machines                                   ; On                                ; On                                ;
+; Extract VHDL State Machines                                      ; On                                ; On                                ;
+; Ignore Verilog initial constructs                                ; Off                               ; Off                               ;
+; Iteration limit for constant Verilog loops                       ; 5000                              ; 5000                              ;
+; Iteration limit for non-constant Verilog loops                   ; 250                               ; 250                               ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                                ; On                                ;
+; Infer RAMs from Raw Logic                                        ; On                                ; On                                ;
+; Parallel Synthesis                                               ; On                                ; On                                ;
+; DSP Block Balancing                                              ; Auto                              ; Auto                              ;
+; NOT Gate Push-Back                                               ; On                                ; On                                ;
+; Power-Up Don't Care                                              ; On                                ; On                                ;
+; Remove Redundant Logic Cells                                     ; Off                               ; Off                               ;
+; Remove Duplicate Registers                                       ; On                                ; On                                ;
+; Ignore CARRY Buffers                                             ; Off                               ; Off                               ;
+; Ignore CASCADE Buffers                                           ; Off                               ; Off                               ;
+; Ignore GLOBAL Buffers                                            ; Off                               ; Off                               ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                               ; Off                               ;
+; Ignore LCELL Buffers                                             ; Off                               ; Off                               ;
+; Ignore SOFT Buffers                                              ; On                                ; On                                ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                               ; Off                               ;
+; Optimization Technique                                           ; Balanced                          ; Balanced                          ;
+; Carry Chain Length                                               ; 70                                ; 70                                ;
+; Auto Carry Chains                                                ; On                                ; On                                ;
+; Auto Open-Drain Pins                                             ; On                                ; On                                ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                               ; Off                               ;
+; Auto ROM Replacement                                             ; On                                ; On                                ;
+; Auto RAM Replacement                                             ; On                                ; On                                ;
+; Auto DSP Block Replacement                                       ; On                                ; On                                ;
+; Auto Shift Register Replacement                                  ; Auto                              ; Auto                              ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto                              ; Auto                              ;
+; Auto Clock Enable Replacement                                    ; On                                ; On                                ;
+; Strict RAM Replacement                                           ; Off                               ; Off                               ;
+; Allow Synchronous Control Signals                                ; On                                ; On                                ;
+; Force Use of Synchronous Clear Signals                           ; Off                               ; Off                               ;
+; Auto RAM Block Balancing                                         ; On                                ; On                                ;
+; Auto RAM to Logic Cell Conversion                                ; Off                               ; Off                               ;
+; Auto Resource Sharing                                            ; Off                               ; Off                               ;
+; Allow Any RAM Size For Recognition                               ; Off                               ; Off                               ;
+; Allow Any ROM Size For Recognition                               ; Off                               ; Off                               ;
+; Allow Any Shift Register Size For Recognition                    ; Off                               ; Off                               ;
+; Use LogicLock Constraints during Resource Balancing              ; On                                ; On                                ;
+; Ignore translate_off and synthesis_off directives                ; Off                               ; Off                               ;
+; Timing-Driven Synthesis                                          ; On                                ; On                                ;
+; Report Parameter Settings                                        ; On                                ; On                                ;
+; Report Source Assignments                                        ; On                                ; On                                ;
+; Report Connectivity Checks                                       ; On                                ; On                                ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                               ; Off                               ;
+; Synchronization Register Chain Length                            ; 2                                 ; 2                                 ;
+; Power Optimization During Synthesis                              ; Normal compilation                ; Normal compilation                ;
+; HDL message level                                                ; Level2                            ; Level2                            ;
+; Suppress Register Optimization Related Messages                  ; Off                               ; Off                               ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000                              ; 5000                              ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000                              ; 5000                              ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                               ; 100                               ;
+; Clock MUX Protection                                             ; On                                ; On                                ;
+; Auto Gated Clock Conversion                                      ; Off                               ; Off                               ;
+; Block Design Naming                                              ; Auto                              ; Auto                              ;
+; SDC constraint protection                                        ; Off                               ; Off                               ;
+; Synthesis Effort                                                 ; Auto                              ; Auto                              ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                                ; On                                ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                               ; Off                               ;
+; Analysis & Synthesis Message Level                               ; Medium                            ; Medium                            ;
+; Disable Register Merging Across Hierarchies                      ; Auto                              ; Auto                              ;
+; Resource Aware Inference For Block RAM                           ; On                                ; On                                ;
++------------------------------------------------------------------+-----------------------------------+-----------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                              ;
++-----------------------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                            ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                     ; Library ;
++-----------------------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; ../src/uno_s.v                                                              ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/uno_s.v                             ;         ;
+; ../src/Seven_Seg.v                                                          ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/Seven_Seg.v                         ;         ;
+; ../src/ROM_PASS.v                                                           ; yes             ; User Wizard-Generated File             ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v                          ;         ;
+; ../src/ROM_ID.v                                                             ; yes             ; User Wizard-Generated File             ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v                            ;         ;
+; ../src/RAM.v                                                                ; yes             ; User Wizard-Generated File             ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/RAM.v                               ;         ;
+; ../src/lfsr_uno_ms.v                                                        ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/lfsr_uno_ms.v                       ;         ;
+; ../src/lfsr_rng_counter.v                                                   ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/lfsr_rng_counter.v                  ;         ;
+; ../src/lfsr_rng.v                                                           ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/lfsr_rng.v                          ;         ;
+; ../src/LFSR_Four_Screens.v                                                  ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/LFSR_Four_Screens.v                 ;         ;
+; ../src/level_control.v                                                      ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/level_control.v                     ;         ;
+; ../src/Game_Design.v                                                        ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/Game_Design.v                       ;         ;
+; ../src/FinalProject_ShastaGuideBotModelS.v                                  ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v ;         ;
+; ../src/digit_timer_top.v                                                    ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v                   ;         ;
+; ../src/digit_timer_mod.v                                                    ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/digit_timer_mod.v                   ;         ;
+; ../src/cien_ms.v                                                            ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/cien_ms.v                           ;         ;
+; ../src/button_shaper.v                                                      ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/button_shaper.v                     ;         ;
+; ../src/access.v                                                             ; yes             ; User Verilog HDL File                  ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/access.v                            ;         ;
+; altsyncram.tdf                                                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                            ;         ;
+; stratix_ram_block.inc                                                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                     ;         ;
+; lpm_mux.inc                                                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                               ;         ;
+; lpm_decode.inc                                                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                            ;         ;
+; aglobal181.inc                                                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                            ;         ;
+; a_rdenreg.inc                                                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                             ;         ;
+; altrom.inc                                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                ;         ;
+; altram.inc                                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                ;         ;
+; altdpram.inc                                                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                              ;         ;
+; db/altsyncram_6aa1.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/db/altsyncram_6aa1.tdf              ;         ;
+; /users/son/documents/finalproject_shastaguidebotmodels/sim_ram/rom_pass.mif ; yes             ; Auto-Found Memory Initialization File  ; /users/son/documents/finalproject_shastaguidebotmodels/sim_ram/rom_pass.mif                      ;         ;
+; db/altsyncram_13a1.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/db/altsyncram_13a1.tdf              ;         ;
+; /users/son/documents/finalproject_shastaguidebotmodels/sim_ram/rom_id.mif   ; yes             ; Auto-Found Memory Initialization File  ; /users/son/documents/finalproject_shastaguidebotmodels/sim_ram/rom_id.mif                        ;         ;
+; db/altsyncram_7bf1.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/db/altsyncram_7bf1.tdf              ;         ;
++-----------------------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 690       ;
+;                                             ;           ;
+; Total combinational functions               ; 587       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 319       ;
+;     -- 3 input functions                    ; 142       ;
+;     -- <=2 input functions                  ; 126       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 581       ;
+;     -- arithmetic mode                      ; 6         ;
+;                                             ;           ;
+; Total registers                             ; 336       ;
+;     -- Dedicated logic registers            ; 336       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 76        ;
+; Total memory bits                           ; 344       ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 380       ;
+; Total fan-out                               ; 3249      ;
+; Average fan-out                             ; 2.90      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                           ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                       ; Entity Name                       ; Library Name ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; |FinalProject_ShastaGuideBotModelS                  ; 587 (0)             ; 336 (0)                   ; 344         ; 0            ; 0       ; 0         ; 76   ; 0            ; |FinalProject_ShastaGuideBotModelS                                                                                                                        ; FinalProject_ShastaGuideBotModelS ; work         ;
+;    |Game_Design:game|                               ; 222 (173)           ; 85 (43)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Game_Design:game                                                                                                       ; Game_Design                       ; work         ;
+;       |LFSR_Four_Screens:IN_LFSR_Four_Screens|      ; 49 (30)             ; 42 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens                                                                ; LFSR_Four_Screens                 ; work         ;
+;          |lfsr_rng:DUT_lfsr_rng|                    ; 19 (3)              ; 18 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|lfsr_rng:DUT_lfsr_rng                                          ; lfsr_rng                          ; work         ;
+;             |lfsr_rng_counter:DUT_lfsr_rng_counter| ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|lfsr_rng:DUT_lfsr_rng|lfsr_rng_counter:DUT_lfsr_rng_counter    ; lfsr_rng_counter                  ; work         ;
+;    |RAM:scores|                                     ; 0 (0)               ; 0 (0)                     ; 56          ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|RAM:scores                                                                                                             ; RAM                               ; work         ;
+;       |altsyncram:altsyncram_component|             ; 0 (0)               ; 0 (0)                     ; 56          ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|RAM:scores|altsyncram:altsyncram_component                                                                             ; altsyncram                        ; work         ;
+;          |altsyncram_7bf1:auto_generated|           ; 0 (0)               ; 0 (0)                     ; 56          ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|RAM:scores|altsyncram:altsyncram_component|altsyncram_7bf1:auto_generated                                              ; altsyncram_7bf1                   ; work         ;
+;    |ROM_ID:id_ROM|                                  ; 0 (0)               ; 0 (0)                     ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|ROM_ID:id_ROM                                                                                                          ; ROM_ID                            ; work         ;
+;       |altsyncram:altsyncram_component|             ; 0 (0)               ; 0 (0)                     ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|ROM_ID:id_ROM|altsyncram:altsyncram_component                                                                          ; altsyncram                        ; work         ;
+;          |altsyncram_13a1:auto_generated|           ; 0 (0)               ; 0 (0)                     ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|ROM_ID:id_ROM|altsyncram:altsyncram_component|altsyncram_13a1:auto_generated                                           ; altsyncram_13a1                   ; work         ;
+;    |ROM_PASS:password_ROM|                          ; 0 (0)               ; 0 (0)                     ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|ROM_PASS:password_ROM                                                                                                  ; ROM_PASS                          ; work         ;
+;       |altsyncram:altsyncram_component|             ; 0 (0)               ; 0 (0)                     ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|ROM_PASS:password_ROM|altsyncram:altsyncram_component                                                                  ; altsyncram                        ; work         ;
+;          |altsyncram_6aa1:auto_generated|           ; 0 (0)               ; 0 (0)                     ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|ROM_PASS:password_ROM|altsyncram:altsyncram_component|altsyncram_6aa1:auto_generated                                   ; altsyncram_6aa1                   ; work         ;
+;    |Seven_Seg:alt|                                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Seven_Seg:alt                                                                                                          ; Seven_Seg                         ; work         ;
+;    |Seven_Seg:first|                                ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Seven_Seg:first                                                                                                        ; Seven_Seg                         ; work         ;
+;    |Seven_Seg:fourth|                               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Seven_Seg:fourth                                                                                                       ; Seven_Seg                         ; work         ;
+;    |Seven_Seg:main|                                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Seven_Seg:main                                                                                                         ; Seven_Seg                         ; work         ;
+;    |Seven_Seg:second|                               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Seven_Seg:second                                                                                                       ; Seven_Seg                         ; work         ;
+;    |Seven_Seg:third|                                ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Seven_Seg:third                                                                                                        ; Seven_Seg                         ; work         ;
+;    |Seven_Seg:timer_one|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Seven_Seg:timer_one                                                                                                    ; Seven_Seg                         ; work         ;
+;    |Seven_Seg:timer_ten|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|Seven_Seg:timer_ten                                                                                                    ; Seven_Seg                         ; work         ;
+;    |access:access_top|                              ; 221 (221)           ; 198 (198)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|access:access_top                                                                                                      ; access                            ; work         ;
+;    |button_shaper:gameplay|                         ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|button_shaper:gameplay                                                                                                 ; button_shaper                     ; work         ;
+;    |button_shaper:maxscore|                         ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|button_shaper:maxscore                                                                                                 ; button_shaper                     ; work         ;
+;    |button_shaper:password|                         ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|button_shaper:password                                                                                                 ; button_shaper                     ; work         ;
+;    |digit_timer_top:game_timer|                     ; 77 (0)              ; 43 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer                                                                                             ; digit_timer_top                   ; work         ;
+;       |digit_timer_mod:digitONE|                    ; 19 (19)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitONE                                                                    ; digit_timer_mod                   ; work         ;
+;       |digit_timer_mod:digitTEN|                    ; 15 (15)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitTEN                                                                    ; digit_timer_mod                   ; work         ;
+;       |uno_s:startOneSecondTimer|                   ; 43 (9)              ; 30 (5)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|uno_s:startOneSecondTimer                                                                   ; uno_s                             ; work         ;
+;          |cien_ms:countHundredMiliSec|              ; 34 (12)             ; 25 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|uno_s:startOneSecondTimer|cien_ms:countHundredMiliSec                                       ; cien_ms                           ; work         ;
+;             |lfsr_uno_ms:lfsr_uno_ms_instantiation| ; 22 (22)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|uno_s:startOneSecondTimer|cien_ms:countHundredMiliSec|lfsr_uno_ms:lfsr_uno_ms_instantiation ; lfsr_uno_ms                       ; work         ;
+;    |level_control:difficulty_set|                   ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalProject_ShastaGuideBotModelS|level_control:difficulty_set                                                                                           ; level_control                     ; work         ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                  ;
++-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------------------+
+; Name                                                                                            ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                     ;
++-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------------------+
+; RAM:scores|altsyncram:altsyncram_component|altsyncram_7bf1:auto_generated|ALTSYNCRAM            ; AUTO ; Single Port ; 7            ; 8            ; --           ; --           ; 56   ; None                    ;
+; ROM_ID:id_ROM|altsyncram:altsyncram_component|altsyncram_13a1:auto_generated|ALTSYNCRAM         ; AUTO ; ROM         ; 8            ; 16           ; --           ; --           ; 128  ; ../sim_RAM/ROM_ID.mif   ;
+; ROM_PASS:password_ROM|altsyncram:altsyncram_component|altsyncram_6aa1:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 8            ; 20           ; --           ; --           ; 160  ; ../sim_RAM/ROM_PASS.mif ;
++-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|access:access_top|nextState ;
++-------------------+-------------------+------------------+---------------------+
+; Name              ; nextState.UserMax ; nextState.Finish ; nextState.HiScore   ;
++-------------------+-------------------+------------------+---------------------+
+; nextState.Finish  ; 0                 ; 0                ; 0                   ;
+; nextState.HiScore ; 0                 ; 1                ; 1                   ;
+; nextState.UserMax ; 1                 ; 1                ; 0                   ;
++-------------------+-------------------+------------------+---------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|access:access_top|state                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++---------------------------+---------------------------+---------------------------+---------------------------+---------------------------+--------------------+------------------+-----------------+---------------+---------------+--------------+-------------+-------------+------------+------------------+------------------+--------------+------------------+-------------------+----------------------+------------------+---------------------+---------------------+----------------------+----------------------+----------------------+----------------------+----------------------+-----------------+--------------------+----------------+-------------------+-------------------+--------------------+--------------------+--------------------+--------------------+------------------+
+; Name                      ; state.timer_enable_pulse4 ; state.timer_enable_pulse3 ; state.timer_enable_pulse2 ; state.timer_enable_pulse1 ; state.ScoreDisplay ; state.ScoreMulti ; state.ScoreInit ; state.UserMax ; state.HiScore ; state.Finish ; state.Wait2 ; state.Wait1 ; state.Init ; state.s_gameover ; state.s_gameplay ; state.s_wait ; state.s_reconfig ; state.s_done_pass ; state.s_compare_pass ; state.s_rom_pass ; state.s_wait_2_pass ; state.s_wait_1_pass ; state.s_enter_pass_5 ; state.s_enter_pass_4 ; state.s_enter_pass_3 ; state.s_enter_pass_2 ; state.s_enter_pass_1 ; state.s_done_id ; state.s_compare_id ; state.s_rom_id ; state.s_wait_2_id ; state.s_wait_1_id ; state.s_enter_id_4 ; state.s_enter_id_3 ; state.s_enter_id_2 ; state.s_enter_id_1 ; state.s_ram_init ;
++---------------------------+---------------------------+---------------------------+---------------------------+---------------------------+--------------------+------------------+-----------------+---------------+---------------+--------------+-------------+-------------+------------+------------------+------------------+--------------+------------------+-------------------+----------------------+------------------+---------------------+---------------------+----------------------+----------------------+----------------------+----------------------+----------------------+-----------------+--------------------+----------------+-------------------+-------------------+--------------------+--------------------+--------------------+--------------------+------------------+
+; state.s_ram_init          ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                ;
+; state.s_enter_id_1        ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 1                  ; 1                ;
+; state.s_enter_id_2        ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 1                  ; 0                  ; 1                ;
+; state.s_enter_id_3        ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 1                  ; 0                  ; 0                  ; 1                ;
+; state.s_enter_id_4        ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 1                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_wait_1_id         ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 1                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_wait_2_id         ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 1                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_rom_id            ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 1              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_compare_id        ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 1                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_done_id           ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_enter_pass_1      ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_enter_pass_2      ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_enter_pass_3      ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_enter_pass_4      ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_enter_pass_5      ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_wait_1_pass       ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 1                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_wait_2_pass       ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 1                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_rom_pass          ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 1                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_compare_pass      ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 1                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_done_pass         ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 1                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_reconfig          ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 1                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_wait              ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 1            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_gameplay          ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 1                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.s_gameover          ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 1                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.Init                ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 1          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.Wait1               ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 1           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.Wait2               ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 1           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.Finish              ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 1            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.HiScore             ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 1             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.UserMax             ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 1             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.ScoreInit           ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 1               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.ScoreMulti          ; 0                         ; 0                         ; 0                         ; 0                         ; 0                  ; 1                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.ScoreDisplay        ; 0                         ; 0                         ; 0                         ; 0                         ; 1                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.timer_enable_pulse1 ; 0                         ; 0                         ; 0                         ; 1                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.timer_enable_pulse2 ; 0                         ; 0                         ; 1                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.timer_enable_pulse3 ; 0                         ; 1                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
+; state.timer_enable_pulse4 ; 1                         ; 0                         ; 0                         ; 0                         ; 0                  ; 0                ; 0               ; 0             ; 0             ; 0            ; 0           ; 0           ; 0          ; 0                ; 0                ; 0            ; 0                ; 0                 ; 0                    ; 0                ; 0                   ; 0                   ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0               ; 0                  ; 0              ; 0                 ; 0                 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                ;
++---------------------------+---------------------------+---------------------------+---------------------------+---------------------------+--------------------+------------------+-----------------+---------------+---------------+--------------+-------------+-------------+------------+------------------+------------------+--------------+------------------+-------------------+----------------------+------------------+---------------------+---------------------+----------------------+----------------------+----------------------+----------------------+----------------------+-----------------+--------------------+----------------+-------------------+-------------------+--------------------+--------------------+--------------------+--------------------+------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitONE|configFlag ;
++---------------+---------------+---------------+-------------------------------------------------------------------+
+; Name          ; configFlag.00 ; configFlag.10 ; configFlag.01                                                     ;
++---------------+---------------+---------------+-------------------------------------------------------------------+
+; configFlag.00 ; 0             ; 0             ; 0                                                                 ;
+; configFlag.01 ; 1             ; 0             ; 1                                                                 ;
+; configFlag.10 ; 1             ; 1             ; 0                                                                 ;
++---------------+---------------+---------------+-------------------------------------------------------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitTEN|configFlag ;
++---------------+---------------+---------------+-------------------------------------------------------------------+
+; Name          ; configFlag.00 ; configFlag.10 ; configFlag.01                                                     ;
++---------------+---------------+---------------+-------------------------------------------------------------------+
+; configFlag.00 ; 0             ; 0             ; 0                                                                 ;
+; configFlag.01 ; 1             ; 0             ; 1                                                                 ;
+; configFlag.10 ; 1             ; 1             ; 0                                                                 ;
++---------------+---------------+---------------+-------------------------------------------------------------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|nextState                ;
++------------------+------------------+------------------+------------------+------------------+
+; Name             ; nextState.Round4 ; nextState.Round2 ; nextState.Round1 ; nextState.Round3 ;
++------------------+------------------+------------------+------------------+------------------+
+; nextState.Round1 ; 0                ; 0                ; 0                ; 0                ;
+; nextState.Round2 ; 0                ; 1                ; 1                ; 0                ;
+; nextState.Round3 ; 0                ; 0                ; 1                ; 1                ;
+; nextState.Round4 ; 1                ; 0                ; 1                ; 0                ;
++------------------+------------------+------------------+------------------+------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|state                                                                                                ;
++---------------+---------------+--------------+--------------+--------------+------------+-----------+-------------+------------+--------------+-------------+------------+
+; Name          ; state.Restart ; state.Round4 ; state.Round3 ; state.Round2 ; state.Loss ; state.Win ; state.Wait2 ; state.Wait ; state.Round1 ; state.Start ; state.Init ;
++---------------+---------------+--------------+--------------+--------------+------------+-----------+-------------+------------+--------------+-------------+------------+
+; state.Init    ; 0             ; 0            ; 0            ; 0            ; 0          ; 0         ; 0           ; 0          ; 0            ; 0           ; 0          ;
+; state.Start   ; 0             ; 0            ; 0            ; 0            ; 0          ; 0         ; 0           ; 0          ; 0            ; 1           ; 1          ;
+; state.Round1  ; 0             ; 0            ; 0            ; 0            ; 0          ; 0         ; 0           ; 0          ; 1            ; 0           ; 1          ;
+; state.Wait    ; 0             ; 0            ; 0            ; 0            ; 0          ; 0         ; 0           ; 1          ; 0            ; 0           ; 1          ;
+; state.Wait2   ; 0             ; 0            ; 0            ; 0            ; 0          ; 0         ; 1           ; 0          ; 0            ; 0           ; 1          ;
+; state.Win     ; 0             ; 0            ; 0            ; 0            ; 0          ; 1         ; 0           ; 0          ; 0            ; 0           ; 1          ;
+; state.Loss    ; 0             ; 0            ; 0            ; 0            ; 1          ; 0         ; 0           ; 0          ; 0            ; 0           ; 1          ;
+; state.Round2  ; 0             ; 0            ; 0            ; 1            ; 0          ; 0         ; 0           ; 0          ; 0            ; 0           ; 1          ;
+; state.Round3  ; 0             ; 0            ; 1            ; 0            ; 0          ; 0         ; 0           ; 0          ; 0            ; 0           ; 1          ;
+; state.Round4  ; 0             ; 1            ; 0            ; 0            ; 0          ; 0         ; 0           ; 0          ; 0            ; 0           ; 1          ;
+; state.Restart ; 1             ; 0            ; 0            ; 0            ; 0          ; 0         ; 0           ; 0          ; 0            ; 0           ; 1          ;
++---------------+---------------+--------------+--------------+--------------+------------+-----------+-------------+------------+--------------+-------------+------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|NextState ;
++---------------------+-------------------+---------------------+--------------------+---------------------------------+
+; Name                ; NextState.SetMain ; NextState.SetFourth ; NextState.SetThird ; NextState.SetSecond             ;
++---------------------+-------------------+---------------------+--------------------+---------------------------------+
+; NextState.SetSecond ; 0                 ; 0                   ; 0                  ; 0                               ;
+; NextState.SetThird  ; 0                 ; 0                   ; 1                  ; 1                               ;
+; NextState.SetFourth ; 0                 ; 1                   ; 0                  ; 1                               ;
+; NextState.SetMain   ; 1                 ; 0                   ; 0                  ; 1                               ;
++---------------------+-------------------+---------------------+--------------------+---------------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|State                              ;
++-----------------+-------------+------------+---------------+-----------------+----------------+-----------------+----------------+------------+
+; Name            ; State.Wait2 ; State.Wait ; State.SetMain ; State.SetFourth ; State.SetThird ; State.SetSecond ; State.SetFirst ; State.Init ;
++-----------------+-------------+------------+---------------+-----------------+----------------+-----------------+----------------+------------+
+; State.Init      ; 0           ; 0          ; 0             ; 0               ; 0              ; 0               ; 0              ; 0          ;
+; State.SetFirst  ; 0           ; 0          ; 0             ; 0               ; 0              ; 0               ; 1              ; 1          ;
+; State.SetSecond ; 0           ; 0          ; 0             ; 0               ; 0              ; 1               ; 0              ; 1          ;
+; State.SetThird  ; 0           ; 0          ; 0             ; 0               ; 1              ; 0               ; 0              ; 1          ;
+; State.SetFourth ; 0           ; 0          ; 0             ; 1               ; 0              ; 0               ; 0              ; 1          ;
+; State.SetMain   ; 0           ; 0          ; 1             ; 0               ; 0              ; 0               ; 0              ; 1          ;
+; State.Wait      ; 0           ; 1          ; 0             ; 0               ; 0              ; 0               ; 0              ; 1          ;
+; State.Wait2     ; 1           ; 0          ; 0             ; 0               ; 0              ; 0               ; 0              ; 1          ;
++-----------------+-------------+------------+---------------+-----------------+----------------+-----------------+----------------+------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|button_shaper:maxscore|State ;
++---------------+--------------+--------------+-----------------------------------+
+; Name          ; State.b_init ; State.b_wait ; State.b_pulse                     ;
++---------------+--------------+--------------+-----------------------------------+
+; State.b_init  ; 0            ; 0            ; 0                                 ;
+; State.b_pulse ; 1            ; 0            ; 1                                 ;
+; State.b_wait  ; 1            ; 1            ; 0                                 ;
++---------------+--------------+--------------+-----------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|button_shaper:gameplay|State ;
++---------------+--------------+--------------+-----------------------------------+
+; Name          ; State.b_init ; State.b_wait ; State.b_pulse                     ;
++---------------+--------------+--------------+-----------------------------------+
+; State.b_init  ; 0            ; 0            ; 0                                 ;
+; State.b_pulse ; 1            ; 0            ; 1                                 ;
+; State.b_wait  ; 1            ; 1            ; 0                                 ;
++---------------+--------------+--------------+-----------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------+
+; State Machine - |FinalProject_ShastaGuideBotModelS|button_shaper:password|State ;
++---------------+--------------+--------------+-----------------------------------+
+; Name          ; State.b_init ; State.b_wait ; State.b_pulse                     ;
++---------------+--------------+--------------+-----------------------------------+
+; State.b_init  ; 0            ; 0            ; 0                                 ;
+; State.b_pulse ; 1            ; 0            ; 1                                 ;
+; State.b_wait  ; 1            ; 1            ; 0                                 ;
++---------------+--------------+--------------+-----------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                  ;
++---------------------------------------------------------------------+-------------------------------------------------------------------------------+
+; Register name                                                       ; Reason for Removal                                                            ;
++---------------------------------------------------------------------+-------------------------------------------------------------------------------+
+; access:access_top|score_compare[3,6,7]                              ; Merged with access:access_top|score_compare[1]                                ;
+; access:access_top|score_compare[2]                                  ; Merged with access:access_top|score_compare[0]                                ;
+; access:access_top|id_out[15]                                        ; Merged with access:access_top|id_1[3]                                         ;
+; access:access_top|id_out[14]                                        ; Merged with access:access_top|id_1[2]                                         ;
+; access:access_top|id_out[13]                                        ; Merged with access:access_top|id_1[1]                                         ;
+; access:access_top|id_out[12]                                        ; Merged with access:access_top|id_1[0]                                         ;
+; access:access_top|id_out[11]                                        ; Merged with access:access_top|id_2[3]                                         ;
+; access:access_top|id_out[10]                                        ; Merged with access:access_top|id_2[2]                                         ;
+; access:access_top|id_out[9]                                         ; Merged with access:access_top|id_2[1]                                         ;
+; access:access_top|id_out[8]                                         ; Merged with access:access_top|id_2[0]                                         ;
+; access:access_top|id_out[7]                                         ; Merged with access:access_top|id_3[3]                                         ;
+; access:access_top|id_out[6]                                         ; Merged with access:access_top|id_3[2]                                         ;
+; access:access_top|id_out[5]                                         ; Merged with access:access_top|id_3[1]                                         ;
+; access:access_top|id_out[4]                                         ; Merged with access:access_top|id_3[0]                                         ;
+; access:access_top|id_out[3]                                         ; Merged with access:access_top|id_4[3]                                         ;
+; access:access_top|id_out[2]                                         ; Merged with access:access_top|id_4[2]                                         ;
+; access:access_top|id_out[1]                                         ; Merged with access:access_top|id_4[1]                                         ;
+; access:access_top|id_out[0]                                         ; Merged with access:access_top|id_4[0]                                         ;
+; level_control:difficulty_set|timer_val_ONES[1..3]                   ; Merged with level_control:difficulty_set|timer_val_ONES[0]                    ;
+; level_control:difficulty_set|timer_val_TENS[1]                      ; Merged with level_control:difficulty_set|score_multiplier[1]                  ;
+; level_control:difficulty_set|timer_val_TENS[0]                      ; Merged with level_control:difficulty_set|score_multiplier[0]                  ;
+; access:access_top|maxHighOnes[3]                                    ; Merged with access:access_top|maxHighOnes[1]                                  ;
+; access:access_top|maxHighTens[2,3]                                  ; Merged with access:access_top|maxHighOnes[1]                                  ;
+; access:access_top|maxHighOnes[2]                                    ; Merged with access:access_top|maxHighOnes[0]                                  ;
+; access:access_top|OnesScore[3]                                      ; Merged with access:access_top|OnesScore[1]                                    ;
+; access:access_top|OnesScore[2]                                      ; Merged with access:access_top|OnesScore[0]                                    ;
+; access:access_top|data_out[3,6,7]                                   ; Merged with access:access_top|data_out[1]                                     ;
+; access:access_top|data_out[2]                                       ; Merged with access:access_top|data_out[0]                                     ;
+; access:access_top|player_score[3,6,7]                               ; Merged with access:access_top|player_score[1]                                 ;
+; access:access_top|player_score[2]                                   ; Merged with access:access_top|player_score[0]                                 ;
+; Game_Design:game|Score[3,6,7]                                       ; Merged with Game_Design:game|Score[1]                                         ;
+; Game_Design:game|Score[2]                                           ; Merged with Game_Design:game|Score[0]                                         ;
+; level_control:difficulty_set|timer_val_ONES[0]                      ; Stuck at GND due to stuck port data_in                                        ;
+; access:access_top|nextState~7                                       ; Lost fanout                                                                   ;
+; access:access_top|nextState~8                                       ; Lost fanout                                                                   ;
+; access:access_top|nextState~9                                       ; Lost fanout                                                                   ;
+; access:access_top|nextState~10                                      ; Lost fanout                                                                   ;
+; access:access_top|state~39                                          ; Lost fanout                                                                   ;
+; access:access_top|state~40                                          ; Lost fanout                                                                   ;
+; access:access_top|state~41                                          ; Lost fanout                                                                   ;
+; access:access_top|state~42                                          ; Lost fanout                                                                   ;
+; access:access_top|state~43                                          ; Lost fanout                                                                   ;
+; access:access_top|state~44                                          ; Lost fanout                                                                   ;
+; Game_Design:game|nextState~7                                        ; Lost fanout                                                                   ;
+; Game_Design:game|nextState~8                                        ; Lost fanout                                                                   ;
+; Game_Design:game|state~2                                            ; Lost fanout                                                                   ;
+; Game_Design:game|state~3                                            ; Lost fanout                                                                   ;
+; Game_Design:game|state~4                                            ; Lost fanout                                                                   ;
+; Game_Design:game|state~5                                            ; Lost fanout                                                                   ;
+; Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|NextState~2 ; Lost fanout                                                                   ;
+; Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|NextState~3 ; Lost fanout                                                                   ;
+; Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|NextState~4 ; Lost fanout                                                                   ;
+; Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|NextState~5 ; Lost fanout                                                                   ;
+; Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|State~6     ; Lost fanout                                                                   ;
+; Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|State~7     ; Lost fanout                                                                   ;
+; Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|State~8     ; Lost fanout                                                                   ;
+; Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|State~9     ; Lost fanout                                                                   ;
+; digit_timer_top:game_timer|digit_timer_mod:digitONE|configFlag.00   ; Lost fanout                                                                   ;
+; digit_timer_top:game_timer|digit_timer_mod:digitTEN|configFlag.00   ; Lost fanout                                                                   ;
+; button_shaper:maxscore|State.b_wait                                 ; Lost fanout                                                                   ;
+; button_shaper:gameplay|State.b_wait                                 ; Lost fanout                                                                   ;
+; button_shaper:password|State.b_wait                                 ; Lost fanout                                                                   ;
+; digit_timer_top:game_timer|digit_timer_mod:digitTEN|configFlag.10   ; Merged with digit_timer_top:game_timer|digit_timer_mod:digitONE|configFlag.10 ;
+; digit_timer_top:game_timer|digit_timer_mod:digitTEN|configFlag.01   ; Merged with digit_timer_top:game_timer|digit_timer_mod:digitONE|configFlag.01 ;
+; Total Number of Removed Registers = 75                              ;                                                                               ;
++---------------------------------------------------------------------+-------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 336   ;
+; Number of registers using Synchronous Clear  ; 57    ;
+; Number of registers using Synchronous Load   ; 6     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 230   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|address_pass[2]                                                                                              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|score_compare[5]                                                                                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|First_Screen[1]                                                        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|Main_Screen[0]                                                         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|level_control:difficulty_set|timer_val_TENS[3]                                                                                 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|lfsr_rng:DUT_lfsr_rng|random[0]                                        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|Second_Screen[0]                                                       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|Third_Screen[0]                                                        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|Fourth_Screen[1]                                                       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|uno_s:startOneSecondTimer|cien_ms:countHundredMiliSec|lfsr_uno_ms:lfsr_uno_ms_instantiation|LFSR[0] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|uno_s:startOneSecondTimer|count_ten_cien_ms[1]                                                      ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|uno_s:startOneSecondTimer|cien_ms:countHundredMiliSec|count_cien[4]                                 ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitTEN|timerCount[1]                                                              ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|alt_display[0]                                                                                               ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitONE|timerCount[2]                                                              ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|pass_out[17]                                                                                                 ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|pass_out[14]                                                                                                 ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|pass_out[11]                                                                                                 ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|pass_out[7]                                                                                                  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|pass_out[0]                                                                                                  ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|first_display[2]                                                                                             ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|third_display[0]                                                                                             ;
+; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|main_disp[0]                                                                                                  ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|address_id[1]                                                                                                ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|address_set[2]                                                                                               ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|data_out[4]                                                                                                  ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|TensScore[3]                                                                                                 ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|Stage1[1]                                                                                                     ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 4 LEs                ; 28 LEs                 ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|Stage2[2]                                                                                                     ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|main_display[3]                                                                                              ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |FinalProject_ShastaGuideBotModelS|access:access_top|main_display[1]                                                                                              ;
+; 17:1               ; 4 bits    ; 44 LEs        ; 4 LEs                ; 40 LEs                 ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|Stage3[3]                                                                                                     ;
+; 22:1               ; 2 bits    ; 28 LEs        ; 4 LEs                ; 24 LEs                 ; Yes        ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|Score[4]                                                                                                      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|State                                                                  ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitONE|configFlag                                                                 ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitTEN|configFlag                                                                 ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |FinalProject_ShastaGuideBotModelS|access:access_top|nextState                                                                                                    ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; No         ; |FinalProject_ShastaGuideBotModelS|access:access_top|state                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Source assignments for ROM_PASS:password_ROM|altsyncram:altsyncram_component|altsyncram_6aa1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                            ;
++---------------------------------+--------------------+------+-----------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                             ;
++---------------------------------+--------------------+------+-----------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Source assignments for ROM_ID:id_ROM|altsyncram:altsyncram_component|altsyncram_13a1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------+
+; Assignment                      ; Value              ; From ; To                                    ;
++---------------------------------+--------------------+------+---------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                     ;
++---------------------------------+--------------------+------+---------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Source assignments for RAM:scores|altsyncram:altsyncram_component|altsyncram_7bf1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------+
+; Assignment                      ; Value              ; From ; To                                 ;
++---------------------------------+--------------------+------+------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                  ;
++---------------------------------+--------------------+------+------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: button_shaper:password ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; b_init         ; 0     ; Signed Integer                             ;
+; b_pulse        ; 1     ; Signed Integer                             ;
+; b_wait         ; 2     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: button_shaper:gameplay ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; b_init         ; 0     ; Signed Integer                             ;
+; b_pulse        ; 1     ; Signed Integer                             ;
+; b_wait         ; 2     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: button_shaper:maxscore ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; b_init         ; 0     ; Signed Integer                             ;
+; b_pulse        ; 1     ; Signed Integer                             ;
+; b_wait         ; 2     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM_PASS:password_ROM|altsyncram:altsyncram_component ;
++------------------------------------+-------------------------+-------------------------------------+
+; Parameter Name                     ; Value                   ; Type                                ;
++------------------------------------+-------------------------+-------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                       ; Untyped                             ;
+; AUTO_CARRY_CHAINS                  ; ON                      ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                     ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS                ; ON                      ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                     ; IGNORE_CASCADE                      ;
+; WIDTH_BYTEENA                      ; 1                       ; Untyped                             ;
+; OPERATION_MODE                     ; ROM                     ; Untyped                             ;
+; WIDTH_A                            ; 20                      ; Signed Integer                      ;
+; WIDTHAD_A                          ; 3                       ; Signed Integer                      ;
+; NUMWORDS_A                         ; 8                       ; Signed Integer                      ;
+; OUTDATA_REG_A                      ; CLOCK0                  ; Untyped                             ;
+; ADDRESS_ACLR_A                     ; NONE                    ; Untyped                             ;
+; OUTDATA_ACLR_A                     ; NONE                    ; Untyped                             ;
+; WRCONTROL_ACLR_A                   ; NONE                    ; Untyped                             ;
+; INDATA_ACLR_A                      ; NONE                    ; Untyped                             ;
+; BYTEENA_ACLR_A                     ; NONE                    ; Untyped                             ;
+; WIDTH_B                            ; 1                       ; Untyped                             ;
+; WIDTHAD_B                          ; 1                       ; Untyped                             ;
+; NUMWORDS_B                         ; 1                       ; Untyped                             ;
+; INDATA_REG_B                       ; CLOCK1                  ; Untyped                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                  ; Untyped                             ;
+; RDCONTROL_REG_B                    ; CLOCK1                  ; Untyped                             ;
+; ADDRESS_REG_B                      ; CLOCK1                  ; Untyped                             ;
+; OUTDATA_REG_B                      ; UNREGISTERED            ; Untyped                             ;
+; BYTEENA_REG_B                      ; CLOCK1                  ; Untyped                             ;
+; INDATA_ACLR_B                      ; NONE                    ; Untyped                             ;
+; WRCONTROL_ACLR_B                   ; NONE                    ; Untyped                             ;
+; ADDRESS_ACLR_B                     ; NONE                    ; Untyped                             ;
+; OUTDATA_ACLR_B                     ; NONE                    ; Untyped                             ;
+; RDCONTROL_ACLR_B                   ; NONE                    ; Untyped                             ;
+; BYTEENA_ACLR_B                     ; NONE                    ; Untyped                             ;
+; WIDTH_BYTEENA_A                    ; 1                       ; Signed Integer                      ;
+; WIDTH_BYTEENA_B                    ; 1                       ; Untyped                             ;
+; RAM_BLOCK_TYPE                     ; AUTO                    ; Untyped                             ;
+; BYTE_SIZE                          ; 8                       ; Untyped                             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE               ; Untyped                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ    ; Untyped                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ    ; Untyped                             ;
+; INIT_FILE                          ; ../sim_RAM/ROM_PASS.mif ; Untyped                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A                  ; Untyped                             ;
+; MAXIMUM_DEPTH                      ; 0                       ; Untyped                             ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                  ; Untyped                             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                  ; Untyped                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                  ; Untyped                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                  ; Untyped                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN         ; Untyped                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN         ; Untyped                             ;
+; ENABLE_ECC                         ; FALSE                   ; Untyped                             ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                   ; Untyped                             ;
+; WIDTH_ECCSTATUS                    ; 3                       ; Untyped                             ;
+; DEVICE_FAMILY                      ; Cyclone IV E            ; Untyped                             ;
+; CBXI_PARAMETER                     ; altsyncram_6aa1         ; Untyped                             ;
++------------------------------------+-------------------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM_ID:id_ROM|altsyncram:altsyncram_component ;
++------------------------------------+-----------------------+-------------------------------+
+; Parameter Name                     ; Value                 ; Type                          ;
++------------------------------------+-----------------------+-------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                     ; Untyped                       ;
+; AUTO_CARRY_CHAINS                  ; ON                    ; AUTO_CARRY                    ;
+; IGNORE_CARRY_BUFFERS               ; OFF                   ; IGNORE_CARRY                  ;
+; AUTO_CASCADE_CHAINS                ; ON                    ; AUTO_CASCADE                  ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                   ; IGNORE_CASCADE                ;
+; WIDTH_BYTEENA                      ; 1                     ; Untyped                       ;
+; OPERATION_MODE                     ; ROM                   ; Untyped                       ;
+; WIDTH_A                            ; 16                    ; Signed Integer                ;
+; WIDTHAD_A                          ; 3                     ; Signed Integer                ;
+; NUMWORDS_A                         ; 8                     ; Signed Integer                ;
+; OUTDATA_REG_A                      ; CLOCK0                ; Untyped                       ;
+; ADDRESS_ACLR_A                     ; NONE                  ; Untyped                       ;
+; OUTDATA_ACLR_A                     ; NONE                  ; Untyped                       ;
+; WRCONTROL_ACLR_A                   ; NONE                  ; Untyped                       ;
+; INDATA_ACLR_A                      ; NONE                  ; Untyped                       ;
+; BYTEENA_ACLR_A                     ; NONE                  ; Untyped                       ;
+; WIDTH_B                            ; 1                     ; Untyped                       ;
+; WIDTHAD_B                          ; 1                     ; Untyped                       ;
+; NUMWORDS_B                         ; 1                     ; Untyped                       ;
+; INDATA_REG_B                       ; CLOCK1                ; Untyped                       ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                ; Untyped                       ;
+; RDCONTROL_REG_B                    ; CLOCK1                ; Untyped                       ;
+; ADDRESS_REG_B                      ; CLOCK1                ; Untyped                       ;
+; OUTDATA_REG_B                      ; UNREGISTERED          ; Untyped                       ;
+; BYTEENA_REG_B                      ; CLOCK1                ; Untyped                       ;
+; INDATA_ACLR_B                      ; NONE                  ; Untyped                       ;
+; WRCONTROL_ACLR_B                   ; NONE                  ; Untyped                       ;
+; ADDRESS_ACLR_B                     ; NONE                  ; Untyped                       ;
+; OUTDATA_ACLR_B                     ; NONE                  ; Untyped                       ;
+; RDCONTROL_ACLR_B                   ; NONE                  ; Untyped                       ;
+; BYTEENA_ACLR_B                     ; NONE                  ; Untyped                       ;
+; WIDTH_BYTEENA_A                    ; 1                     ; Signed Integer                ;
+; WIDTH_BYTEENA_B                    ; 1                     ; Untyped                       ;
+; RAM_BLOCK_TYPE                     ; AUTO                  ; Untyped                       ;
+; BYTE_SIZE                          ; 8                     ; Untyped                       ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE             ; Untyped                       ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ  ; Untyped                       ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ  ; Untyped                       ;
+; INIT_FILE                          ; ../sim_RAM/ROM_ID.mif ; Untyped                       ;
+; INIT_FILE_LAYOUT                   ; PORT_A                ; Untyped                       ;
+; MAXIMUM_DEPTH                      ; 0                     ; Untyped                       ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                ; Untyped                       ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                ; Untyped                       ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                ; Untyped                       ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                ; Untyped                       ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN       ; Untyped                       ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN       ; Untyped                       ;
+; ENABLE_ECC                         ; FALSE                 ; Untyped                       ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                 ; Untyped                       ;
+; WIDTH_ECCSTATUS                    ; 3                     ; Untyped                       ;
+; DEVICE_FAMILY                      ; Cyclone IV E          ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_13a1       ; Untyped                       ;
++------------------------------------+-----------------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RAM:scores|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-----------------------------+
+; Parameter Name                     ; Value                ; Type                        ;
++------------------------------------+----------------------+-----------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                     ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                  ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE              ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                     ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                     ;
+; WIDTH_A                            ; 8                    ; Signed Integer              ;
+; WIDTHAD_A                          ; 3                    ; Signed Integer              ;
+; NUMWORDS_A                         ; 7                    ; Signed Integer              ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                     ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                     ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                     ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                     ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                     ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                     ;
+; WIDTH_B                            ; 1                    ; Untyped                     ;
+; WIDTHAD_B                          ; 1                    ; Untyped                     ;
+; NUMWORDS_B                         ; 1                    ; Untyped                     ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                     ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                     ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                     ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                     ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                     ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                     ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                     ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                     ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                     ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                     ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                     ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                     ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer              ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                     ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                     ;
+; BYTE_SIZE                          ; 8                    ; Untyped                     ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                     ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                     ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                     ;
+; INIT_FILE                          ; UNUSED               ; Untyped                     ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                     ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                     ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                     ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                     ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                     ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                     ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                     ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                     ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                     ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                     ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                     ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                     ;
+; CBXI_PARAMETER                     ; altsyncram_7bf1      ; Untyped                     ;
++------------------------------------+----------------------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Game_Design:game ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; Init           ; 0000  ; Unsigned Binary                      ;
+; Start          ; 0001  ; Unsigned Binary                      ;
+; Round1         ; 0010  ; Unsigned Binary                      ;
+; End1           ; 0011  ; Unsigned Binary                      ;
+; Wait           ; 0100  ; Unsigned Binary                      ;
+; Wait2          ; 0101  ; Unsigned Binary                      ;
+; Win            ; 0110  ; Unsigned Binary                      ;
+; Loss           ; 0111  ; Unsigned Binary                      ;
+; Round2         ; 1000  ; Unsigned Binary                      ;
+; Round3         ; 1001  ; Unsigned Binary                      ;
+; Round4         ; 1010  ; Unsigned Binary                      ;
+; Restart        ; 1011  ; Unsigned Binary                      ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Init           ; 0000  ; Unsigned Binary                                                             ;
+; SetFirst       ; 0001  ; Unsigned Binary                                                             ;
+; SetSecond      ; 0010  ; Unsigned Binary                                                             ;
+; SetThird       ; 0011  ; Unsigned Binary                                                             ;
+; SetFourth      ; 0100  ; Unsigned Binary                                                             ;
+; SetMain        ; 0101  ; Unsigned Binary                                                             ;
+; Wait           ; 0110  ; Unsigned Binary                                                             ;
+; Wait2          ; 0111  ; Unsigned Binary                                                             ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: level_control:difficulty_set ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; LEVEL_1        ; 01    ; Unsigned Binary                                  ;
+; LEVEL_2        ; 10    ; Unsigned Binary                                  ;
+; LEVEL_3        ; 11    ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: access:access_top ;
++---------------------+--------+---------------------------------+
+; Parameter Name      ; Value  ; Type                            ;
++---------------------+--------+---------------------------------+
+; s_ram_init          ; 000000 ; Unsigned Binary                 ;
+; s_enter_id_1        ; 000001 ; Unsigned Binary                 ;
+; s_enter_id_2        ; 000010 ; Unsigned Binary                 ;
+; s_enter_id_3        ; 000011 ; Unsigned Binary                 ;
+; s_enter_id_4        ; 000100 ; Unsigned Binary                 ;
+; s_wait_1_id         ; 000101 ; Unsigned Binary                 ;
+; s_wait_2_id         ; 000110 ; Unsigned Binary                 ;
+; s_rom_id            ; 000111 ; Unsigned Binary                 ;
+; s_compare_id        ; 001000 ; Unsigned Binary                 ;
+; s_done_id           ; 001001 ; Unsigned Binary                 ;
+; s_enter_pass_1      ; 001010 ; Unsigned Binary                 ;
+; s_enter_pass_2      ; 001011 ; Unsigned Binary                 ;
+; s_enter_pass_3      ; 001100 ; Unsigned Binary                 ;
+; s_enter_pass_4      ; 001101 ; Unsigned Binary                 ;
+; s_enter_pass_5      ; 001110 ; Unsigned Binary                 ;
+; s_wait_1_pass       ; 001111 ; Unsigned Binary                 ;
+; s_wait_2_pass       ; 010000 ; Unsigned Binary                 ;
+; s_rom_pass          ; 010001 ; Unsigned Binary                 ;
+; s_compare_pass      ; 010010 ; Unsigned Binary                 ;
+; s_done_pass         ; 010011 ; Unsigned Binary                 ;
+; s_reconfig          ; 010100 ; Unsigned Binary                 ;
+; s_wait              ; 010101 ; Unsigned Binary                 ;
+; s_gameplay          ; 010110 ; Unsigned Binary                 ;
+; s_gameover          ; 010111 ; Unsigned Binary                 ;
+; Init                ; 011000 ; Unsigned Binary                 ;
+; Wait1               ; 011001 ; Unsigned Binary                 ;
+; Wait2               ; 011010 ; Unsigned Binary                 ;
+; Finish              ; 011011 ; Unsigned Binary                 ;
+; HiScore             ; 011100 ; Unsigned Binary                 ;
+; UserMax             ; 011101 ; Unsigned Binary                 ;
+; ScoreInit           ; 011110 ; Unsigned Binary                 ;
+; ScoreMulti          ; 011111 ; Unsigned Binary                 ;
+; ScoreDisplay        ; 100000 ; Unsigned Binary                 ;
+; timer_enable_pulse1 ; 100001 ; Unsigned Binary                 ;
+; timer_enable_pulse2 ; 100010 ; Unsigned Binary                 ;
+; timer_enable_pulse3 ; 100011 ; Unsigned Binary                 ;
+; timer_enable_pulse4 ; 100100 ; Unsigned Binary                 ;
++---------------------+--------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                  ;
++-------------------------------------------+-------------------------------------------------------+
+; Name                                      ; Value                                                 ;
++-------------------------------------------+-------------------------------------------------------+
+; Number of entity instances                ; 3                                                     ;
+; Entity Instance                           ; ROM_PASS:password_ROM|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                                   ;
+;     -- WIDTH_A                            ; 20                                                    ;
+;     -- NUMWORDS_A                         ; 8                                                     ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                ;
+;     -- WIDTH_B                            ; 1                                                     ;
+;     -- NUMWORDS_B                         ; 1                                                     ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                          ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                             ;
+; Entity Instance                           ; ROM_ID:id_ROM|altsyncram:altsyncram_component         ;
+;     -- OPERATION_MODE                     ; ROM                                                   ;
+;     -- WIDTH_A                            ; 16                                                    ;
+;     -- NUMWORDS_A                         ; 8                                                     ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                ;
+;     -- WIDTH_B                            ; 1                                                     ;
+;     -- NUMWORDS_B                         ; 1                                                     ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                          ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                             ;
+; Entity Instance                           ; RAM:scores|altsyncram:altsyncram_component            ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                           ;
+;     -- WIDTH_A                            ; 8                                                     ;
+;     -- NUMWORDS_A                         ; 7                                                     ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                ;
+;     -- WIDTH_B                            ; 1                                                     ;
+;     -- NUMWORDS_B                         ; 1                                                     ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                          ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                             ;
++-------------------------------------------+-------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "digit_timer_top:game_timer|digit_timer_mod:digitTEN"                                      ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; borrowUp   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; noBorrowUp ; Input  ; Info     ; Stuck at VCC                                                                        ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|lfsr_rng:DUT_lfsr_rng|lfsr_rng_counter:DUT_lfsr_rng_counter" ;
++-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                         ;
++-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+; q[15..12] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                             ;
+; q[10..6]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                             ;
+; q[4..0]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                             ;
++-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 76                          ;
+; cycloneiii_ff         ; 336                         ;
+;     ENA               ; 202                         ;
+;     ENA SCLR          ; 25                          ;
+;     ENA SCLR SLD      ; 2                           ;
+;     ENA SLD           ; 1                           ;
+;     SCLR              ; 30                          ;
+;     SLD               ; 3                           ;
+;     plain             ; 73                          ;
+; cycloneiii_lcell_comb ; 595                         ;
+;     arith             ; 6                           ;
+;         2 data inputs ; 6                           ;
+;     normal            ; 589                         ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 118                         ;
+;         3 data inputs ; 142                         ;
+;         4 data inputs ; 319                         ;
+; cycloneiii_ram_block  ; 44                          ;
+;                       ;                             ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 3.07                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri May 01 18:19:09 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FinalProject_ShastaGuideBotModelS -c FinalProject_ShastaGuideBotModelS
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/uno_s.v
+    Info (12023): Found entity 1: uno_s File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/uno_s.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/seven_seg.v
+    Info (12023): Found entity 1: Seven_Seg File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/Seven_Seg.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/rom_pass.v
+    Info (12023): Found entity 1: ROM_PASS File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/rom_id.v
+    Info (12023): Found entity 1: ROM_ID File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/ram.v
+    Info (12023): Found entity 1: RAM File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/RAM.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/lfsr_uno_ms.v
+    Info (12023): Found entity 1: lfsr_uno_ms File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/lfsr_uno_ms.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/lfsr_rng_counter.v
+    Info (12023): Found entity 1: lfsr_rng_counter File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/lfsr_rng_counter.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/lfsr_rng.v
+    Info (12023): Found entity 1: lfsr_rng File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/lfsr_rng.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/lfsr_four_screens.v
+    Info (12023): Found entity 1: LFSR_Four_Screens File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/LFSR_Four_Screens.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/level_control.v
+    Info (12023): Found entity 1: level_control File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/level_control.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/game_design.v
+    Info (12023): Found entity 1: Game_Design File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/Game_Design.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/finalproject_shastaguidebotmodels.v
+    Info (12023): Found entity 1: FinalProject_ShastaGuideBotModelS File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/digit_timer_top.v
+    Info (12023): Found entity 1: digit_timer_top File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/digit_timer_mod.v
+    Info (12023): Found entity 1: digit_timer_mod File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/digit_timer_mod.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/cien_ms.v
+    Info (12023): Found entity 1: cien_ms File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/cien_ms.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/button_shaper.v
+    Info (12023): Found entity 1: button_shaper File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/button_shaper.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/son/documents/finalproject_shastaguidebotmodels/src/access.v
+    Info (12023): Found entity 1: access File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/access.v Line: 8
+Info (12127): Elaborating entity "FinalProject_ShastaGuideBotModelS" for the top level hierarchy
+Info (12128): Elaborating entity "button_shaper" for hierarchy "button_shaper:password" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v Line: 82
+Info (12128): Elaborating entity "Seven_Seg" for hierarchy "Seven_Seg:main" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v Line: 88
+Info (12128): Elaborating entity "ROM_PASS" for hierarchy "ROM_PASS:password_ROM" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v Line: 98
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM_PASS:password_ROM|altsyncram:altsyncram_component" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v Line: 81
+Info (12130): Elaborated megafunction instantiation "ROM_PASS:password_ROM|altsyncram:altsyncram_component" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v Line: 81
+Info (12133): Instantiated megafunction "ROM_PASS:password_ROM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v Line: 81
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "../sim_RAM/ROM_PASS.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "8"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "widthad_a" = "3"
+    Info (12134): Parameter "width_a" = "20"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6aa1.tdf
+    Info (12023): Found entity 1: altsyncram_6aa1 File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/db/altsyncram_6aa1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_6aa1" for hierarchy "ROM_PASS:password_ROM|altsyncram:altsyncram_component|altsyncram_6aa1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "ROM_ID" for hierarchy "ROM_ID:id_ROM" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v Line: 99
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM_ID:id_ROM|altsyncram:altsyncram_component" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v Line: 81
+Info (12130): Elaborated megafunction instantiation "ROM_ID:id_ROM|altsyncram:altsyncram_component" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v Line: 81
+Info (12133): Instantiated megafunction "ROM_ID:id_ROM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v Line: 81
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "../sim_RAM/ROM_ID.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "8"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "widthad_a" = "3"
+    Info (12134): Parameter "width_a" = "16"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_13a1.tdf
+    Info (12023): Found entity 1: altsyncram_13a1 File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/db/altsyncram_13a1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_13a1" for hierarchy "ROM_ID:id_ROM|altsyncram:altsyncram_component|altsyncram_13a1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:scores" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v Line: 100
+Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM:scores|altsyncram:altsyncram_component" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/RAM.v Line: 85
+Info (12130): Elaborated megafunction instantiation "RAM:scores|altsyncram:altsyncram_component" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/RAM.v Line: 85
+Info (12133): Instantiated megafunction "RAM:scores|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/RAM.v Line: 85
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "7"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "3"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7bf1.tdf
+    Info (12023): Found entity 1: altsyncram_7bf1 File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/db/altsyncram_7bf1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_7bf1" for hierarchy "RAM:scores|altsyncram:altsyncram_component|altsyncram_7bf1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "Game_Design" for hierarchy "Game_Design:game" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v Line: 104
+Warning (10036): Verilog HDL or VHDL warning at Game_Design.v(24): object "screen_test" assigned a value but never read File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/Game_Design.v Line: 24
+Warning (10036): Verilog HDL or VHDL warning at Game_Design.v(28): object "check" assigned a value but never read File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/Game_Design.v Line: 28
+Info (12128): Elaborating entity "LFSR_Four_Screens" for hierarchy "Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/Game_Design.v Line: 46
+Info (12128): Elaborating entity "lfsr_rng" for hierarchy "Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|lfsr_rng:DUT_lfsr_rng" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/LFSR_Four_Screens.v Line: 11
+Info (12128): Elaborating entity "lfsr_rng_counter" for hierarchy "Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|lfsr_rng:DUT_lfsr_rng|lfsr_rng_counter:DUT_lfsr_rng_counter" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/lfsr_rng.v Line: 17
+Info (12128): Elaborating entity "level_control" for hierarchy "level_control:difficulty_set" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v Line: 108
+Info (12128): Elaborating entity "digit_timer_top" for hierarchy "digit_timer_top:game_timer" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v Line: 109
+Info (12128): Elaborating entity "uno_s" for hierarchy "digit_timer_top:game_timer|uno_s:startOneSecondTimer" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v Line: 36
+Warning (10230): Verilog HDL assignment warning at uno_s.v(35): truncated value with size 32 to match size of target (4) File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/uno_s.v Line: 35
+Info (12128): Elaborating entity "cien_ms" for hierarchy "digit_timer_top:game_timer|uno_s:startOneSecondTimer|cien_ms:countHundredMiliSec" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/uno_s.v Line: 20
+Warning (10230): Verilog HDL assignment warning at cien_ms.v(36): truncated value with size 32 to match size of target (7) File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/cien_ms.v Line: 36
+Info (12128): Elaborating entity "lfsr_uno_ms" for hierarchy "digit_timer_top:game_timer|uno_s:startOneSecondTimer|cien_ms:countHundredMiliSec|lfsr_uno_ms:lfsr_uno_ms_instantiation" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/cien_ms.v Line: 21
+Info (12128): Elaborating entity "digit_timer_mod" for hierarchy "digit_timer_top:game_timer|digit_timer_mod:digitTEN" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v Line: 42
+Warning (10230): Verilog HDL assignment warning at digit_timer_mod.v(54): truncated value with size 32 to match size of target (4) File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/digit_timer_mod.v Line: 54
+Info (12128): Elaborating entity "access" for hierarchy "access:access_top" File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v Line: 115
+Warning (10036): Verilog HDL or VHDL warning at access.v(46): object "verify_id" assigned a value but never read File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/access.v Line: 46
+Warning (10036): Verilog HDL or VHDL warning at access.v(46): object "verify_pass" assigned a value but never read File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/access.v Line: 46
+Warning (10230): Verilog HDL assignment warning at access.v(518): truncated value with size 32 to match size of target (4) File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/access.v Line: 518
+Warning (10230): Verilog HDL assignment warning at access.v(533): truncated value with size 32 to match size of target (4) File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/access.v Line: 533
+Warning (10230): Verilog HDL assignment warning at access.v(658): truncated value with size 4 to match size of target (3) File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/access.v Line: 658
+Warning (10230): Verilog HDL assignment warning at access.v(659): truncated value with size 4 to match size of target (3) File: C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/access.v Line: 659
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 29 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 821 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 61 output pins
+    Info (21061): Implemented 701 logic cells
+    Info (21064): Implemented 44 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Fri May 01 18:19:26 2020
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:33
+
+

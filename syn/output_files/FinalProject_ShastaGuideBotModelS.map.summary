@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri May 01 18:19:26 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : FinalProject_ShastaGuideBotModelS
+Top-level Entity Name : FinalProject_ShastaGuideBotModelS
+Family : Cyclone IV E
+Total logic elements : 690
+    Total combinational functions : 587
+    Dedicated logic registers : 336
+Total registers : 336
+Total pins : 76
+Total virtual pins : 0
+Total memory bits : 344
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
