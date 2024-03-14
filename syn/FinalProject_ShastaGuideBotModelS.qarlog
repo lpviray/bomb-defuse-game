@@ -1,0 +1,33 @@
+Quartus Prime Archive log --	C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/FinalProject_ShastaGuideBotModelS.qarlog
+
+Archive:	C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/FinalProject_ShastaGuideBotModelS.qar
+Date:		Fri May 01 18:22:04 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/Game_Design.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/LFSR_Four_Screens.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/RAM.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/Seven_Seg.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/access.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/button_shaper.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/cien_ms.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/digit_timer_mod.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/level_control.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/lfsr_rng.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/lfsr_rng_counter.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/lfsr_uno_ms.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/src/uno_s.v
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/FinalProject_ShastaGuideBotModelS.qpf
+C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/FinalProject_ShastaGuideBotModelS.qsf
+C:/users/son/documents/finalproject_shastaguidebotmodels/sim_ram/rom_id.mif
+C:/users/son/documents/finalproject_shastaguidebotmodels/sim_ram/rom_pass.mif
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 22 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
