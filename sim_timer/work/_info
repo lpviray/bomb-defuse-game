@@ -1,0 +1,283 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1
+vbs_mod
+Z0 !s110 1588215321
+!i10b 1
+!s100 2c=F5lEmDEOgHFAKm@Vah3
+IliZj@z[oAQZT476WOh6:h1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer
+w1588192732
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/bs_mod.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/bs_mod.v
+L0 8
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1588215321.000000
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/bs_mod.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/bs_mod.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcien_ms
+Z7 !s110 1588215320
+!i10b 1
+!s100 Y]1n_7XZS2F43R9Q9@Ho;3
+IfR09Pb@CW_U?W`4:NO0H92
+R1
+R2
+w1588211858
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms.v
+L0 9
+R3
+r1
+!s85 0
+31
+Z8 !s108 1588215320.000000
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms.v|
+!i113 1
+R5
+R6
+vcien_ms_tb
+R7
+!i10b 1
+!s100 nXh<LBR?`l2LX>hWTf0@61
+IYU0OliUb<b8_A@jXB_G?Y2
+R1
+R2
+w1588203555
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms_tb.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms_tb.v
+L0 7
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms_tb.v|
+!i113 1
+R5
+R6
+vdigit_timer_mod
+R0
+!i10b 1
+!s100 D^6acdgoW<3P_DiD_K6TY0
+Im]VPITaTN;ZD]OG?RRnBU0
+R1
+R2
+w1588195877
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_mod.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_mod.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_mod.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_mod.v|
+!i113 1
+R5
+R6
+vdigit_timer_tb
+R0
+!i10b 1
+!s100 3Uk9S8eJIc4_ZR<L>ZzlU0
+IJldU3cDBzSdQ^DhNL[A=B2
+R1
+R2
+w1588192788
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_tb.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_tb.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_tb.v|
+!i113 1
+R5
+R6
+vdigit_timer_top
+R0
+!i10b 1
+!s100 9obPU3MLb@R:K=NLlagMj1
+I[YE7A^ij9EWI<:G3Uf^YO0
+R1
+R2
+w1588215075
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top.v
+L0 7
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top.v|
+!i113 1
+R5
+R6
+vdigit_timer_top_tb
+R0
+!i10b 1
+!s100 o6m@Ei1l=OC;0L>[HVmfh2
+IUJDPz=PYi[EDZe1:QL1U83
+R1
+R2
+w1588211418
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top_tb.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top_tb.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top_tb.v|
+!i113 1
+R5
+R6
+vlfsr_uno_ms
+R7
+!i10b 1
+!s100 90MF?Z]PjKdC58F8@5AQY2
+I`k::9IkOK848HXaFc0_Bb3
+R1
+R2
+w1588211817
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms.v|
+!i113 1
+R5
+R6
+vlfsr_uno_ms_tb
+R7
+!i10b 1
+!s100 =7[PeMGdi?d<]C=[iTh0e1
+IUgFmW9E<M8Q]C9QXFcG;;3
+R1
+R2
+w1588209320
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms_tb.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms_tb.v
+L0 9
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms_tb.v|
+!i113 1
+R5
+R6
+vseven_seg_decoder
+R0
+!i10b 1
+!s100 o[AM5:nc@:C:@MC@Dif_D2
+IF7fk_]2VS`_2bzNo=gIk>3
+R1
+R2
+w1588192814
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/seven_seg_decoder.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/seven_seg_decoder.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/seven_seg_decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/seven_seg_decoder.v|
+!i113 1
+R5
+R6
+vuno_ms
+R7
+!i10b 1
+!s100 ^GmodC9WG1KVEAfk?WK5[1
+IZ3K3>T2aC`W9PjWYIIfL02
+R1
+R2
+w1588192832
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_ms.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_ms.v
+L0 7
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_ms.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_ms.v|
+!i113 1
+R5
+R6
+vuno_s
+R7
+!i10b 1
+!s100 VUf>MPAI_jV<Qm4:4Y5WZ0
+I[F[iVF9jkbYal5ZlJaCYU3
+R1
+R2
+w1588211899
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s.v
+L0 9
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s.v|
+!i113 1
+R5
+R6
+vuno_s_tb
+R7
+!i10b 1
+!s100 om6Hk^Sb]=ZFNVGn7>Lk<0
+IRzS:>g>Zoo@X=Jmm3K`oE3
+R1
+R2
+w1588210843
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s_tb.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s_tb.v
+L0 7
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s_tb.v|
+!i113 1
+R5
+R6

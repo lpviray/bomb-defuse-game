@@ -1,0 +1,92 @@
+{C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cien_ms
+
+Top level modules:
+	cien_ms
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lfsr_uno_ms
+
+Top level modules:
+	lfsr_uno_ms
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s_tb.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uno_s_tb
+
+Top level modules:
+	uno_s_tb
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms_tb.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/cien_ms_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cien_ms_tb
+
+Top level modules:
+	cien_ms_tb
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/bs_mod.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/bs_mod.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bs_mod
+
+Top level modules:
+	bs_mod
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/seven_seg_decoder.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/seven_seg_decoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module seven_seg_decoder
+
+Top level modules:
+	seven_seg_decoder
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_tb.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module digit_timer_tb
+
+Top level modules:
+	digit_timer_tb
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top_tb.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module digit_timer_top_tb
+
+Top level modules:
+	digit_timer_top_tb
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_mod.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_mod.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module digit_timer_mod
+
+Top level modules:
+	digit_timer_mod
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_ms.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_ms.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uno_ms
+
+Top level modules:
+	uno_ms
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/digit_timer_top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module digit_timer_top
+
+Top level modules:
+	digit_timer_top
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms_tb.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/lfsr_uno_ms_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lfsr_uno_ms_tb
+
+Top level modules:
+	lfsr_uno_ms_tb
+
+} {} {}} {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s.v} {1 {vlog -work work -stats=none {C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_timer/uno_s.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uno_s
+
+Top level modules:
+	uno_s
+
+} {} {}}
