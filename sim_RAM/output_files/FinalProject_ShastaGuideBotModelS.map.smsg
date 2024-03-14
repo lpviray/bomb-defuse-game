@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at access.v(105): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_RAM/access.v Line: 105
