@@ -1,0 +1,115 @@
+
+State Machine - |FinalProject_ShastaGuideBotModelS|access:access_top|nextState
+Name nextState.UserMax nextState.Finish nextState.HiScore 
+nextState.Finish 0 0 0 
+nextState.HiScore 0 1 1 
+nextState.UserMax 1 1 0 
+
+State Machine - |FinalProject_ShastaGuideBotModelS|access:access_top|state
+Name state.timer_enable_pulse4 state.timer_enable_pulse3 state.timer_enable_pulse2 state.timer_enable_pulse1 state.ScoreDisplay state.ScoreMulti state.ScoreInit state.UserMax state.HiScore state.Finish state.Wait2 state.Wait1 state.Init state.s_gameover state.s_gameplay state.s_wait state.s_reconfig state.s_done_pass state.s_compare_pass state.s_rom_pass state.s_wait_2_pass state.s_wait_1_pass state.s_enter_pass_5 state.s_enter_pass_4 state.s_enter_pass_3 state.s_enter_pass_2 state.s_enter_pass_1 state.s_done_id state.s_compare_id state.s_rom_id state.s_wait_2_id state.s_wait_1_id state.s_enter_id_4 state.s_enter_id_3 state.s_enter_id_2 state.s_enter_id_1 state.s_ram_init 
+state.s_ram_init 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.s_enter_id_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.s_enter_id_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.s_enter_id_3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.s_enter_id_4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.s_wait_1_id 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.s_wait_2_id 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.s_rom_id 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.s_compare_id 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.s_done_id 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.s_enter_pass_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.s_enter_pass_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.s_enter_pass_3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_enter_pass_4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_enter_pass_5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_wait_1_pass 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_wait_2_pass 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_rom_pass 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_compare_pass 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_done_pass 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_reconfig 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_wait 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_gameplay 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.s_gameover 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.Init 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.Wait1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.Wait2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.Finish 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.HiScore 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.UserMax 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ScoreInit 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ScoreMulti 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ScoreDisplay 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.timer_enable_pulse1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.timer_enable_pulse2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.timer_enable_pulse3 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.timer_enable_pulse4 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitONE|configFlag
+Name configFlag.00 configFlag.10 configFlag.01 
+configFlag.00 0 0 0 
+configFlag.01 1 0 1 
+configFlag.10 1 1 0 
+
+State Machine - |FinalProject_ShastaGuideBotModelS|digit_timer_top:game_timer|digit_timer_mod:digitTEN|configFlag
+Name configFlag.00 configFlag.10 configFlag.01 
+configFlag.00 0 0 0 
+configFlag.01 1 0 1 
+configFlag.10 1 1 0 
+
+State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|nextState
+Name nextState.Round4 nextState.Round2 nextState.Round1 nextState.Round3 
+nextState.Round1 0 0 0 0 
+nextState.Round2 0 1 1 0 
+nextState.Round3 0 0 1 1 
+nextState.Round4 1 0 1 0 
+
+State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|state
+Name state.Restart state.Round4 state.Round3 state.Round2 state.Loss state.Win state.Wait2 state.Wait state.Round1 state.Start state.Init 
+state.Init 0 0 0 0 0 0 0 0 0 0 0 
+state.Start 0 0 0 0 0 0 0 0 0 1 1 
+state.Round1 0 0 0 0 0 0 0 0 1 0 1 
+state.Wait 0 0 0 0 0 0 0 1 0 0 1 
+state.Wait2 0 0 0 0 0 0 1 0 0 0 1 
+state.Win 0 0 0 0 0 1 0 0 0 0 1 
+state.Loss 0 0 0 0 1 0 0 0 0 0 1 
+state.Round2 0 0 0 1 0 0 0 0 0 0 1 
+state.Round3 0 0 1 0 0 0 0 0 0 0 1 
+state.Round4 0 1 0 0 0 0 0 0 0 0 1 
+state.Restart 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|NextState
+Name NextState.SetMain NextState.SetFourth NextState.SetThird NextState.SetSecond 
+NextState.SetSecond 0 0 0 0 
+NextState.SetThird 0 0 1 1 
+NextState.SetFourth 0 1 0 1 
+NextState.SetMain 1 0 0 1 
+
+State Machine - |FinalProject_ShastaGuideBotModelS|Game_Design:game|LFSR_Four_Screens:IN_LFSR_Four_Screens|State
+Name State.Wait2 State.Wait State.SetMain State.SetFourth State.SetThird State.SetSecond State.SetFirst State.Init 
+State.Init 0 0 0 0 0 0 0 0 
+State.SetFirst 0 0 0 0 0 0 1 1 
+State.SetSecond 0 0 0 0 0 1 0 1 
+State.SetThird 0 0 0 0 1 0 0 1 
+State.SetFourth 0 0 0 1 0 0 0 1 
+State.SetMain 0 0 1 0 0 0 0 1 
+State.Wait 0 1 0 0 0 0 0 1 
+State.Wait2 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject_ShastaGuideBotModelS|button_shaper:maxscore|State
+Name State.b_init State.b_wait State.b_pulse 
+State.b_init 0 0 0 
+State.b_pulse 1 0 1 
+State.b_wait 1 1 0 
+
+State Machine - |FinalProject_ShastaGuideBotModelS|button_shaper:gameplay|State
+Name State.b_init State.b_wait State.b_pulse 
+State.b_init 0 0 0 
+State.b_pulse 1 0 1 
+State.b_wait 1 1 0 
+
+State Machine - |FinalProject_ShastaGuideBotModelS|button_shaper:password|State
+Name State.b_init State.b_wait State.b_pulse 
+State.b_init 0 0 0 
+State.b_pulse 1 0 1 
+State.b_wait 1 1 0 

@@ -1,0 +1,96 @@
+Restore Archived Project report for FinalProject_ShastaGuideBotModelS
+Fri May 01 16:25:28 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Fri May 01 16:25:28 2020 ;
+; Revision Name                   ; FinalProject_ShastaGuideBotModelS     ;
+; Top-level Entity Name           ; FinalProject_ShastaGuideBotModelS     ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/FinalProject_ShastaGuideBotModelS.qar' into the 'C:/Users/Son/Documents/FinalProject_ShastaGuideBotModelS/syn/FinalProject_ShastaGuideBotModelS_restored/' directory
+Info: Generated report 'FinalProject_ShastaGuideBotModelS.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Fri May 01 16:25:28 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++----------------+
+; Files Restored ;
++----------------+
+; File Name      ;
++----------------+
+
+
++-------------------------------------------+
+; Files Not Restored                        ;
++-------------------------------------------+
+; File Name                                 ;
++-------------------------------------------+
+; qar_info.json                             ;
+; src/FinalProject_ShastaGuideBotModelS.v   ;
+; src/Game_Design.v                         ;
+; src/LFSR_Four_Screens.v                   ;
+; src/RAM.v                                 ;
+; src/ROM_ID.v                              ;
+; src/ROM_PASS.v                            ;
+; src/Seven_Seg.v                           ;
+; src/access.v                              ;
+; src/button_shaper.v                       ;
+; src/cien_ms.v                             ;
+; src/digit_timer_mod.v                     ;
+; src/digit_timer_top.v                     ;
+; src/level_control.v                       ;
+; src/lfsr_rng.v                            ;
+; src/lfsr_rng_counter.v                    ;
+; src/lfsr_uno_ms.v                         ;
+; src/uno_s.v                               ;
+; syn/FinalProject_ShastaGuideBotModelS.qpf ;
+; syn/FinalProject_ShastaGuideBotModelS.qsf ;
+; sim_ram/rom_id.mif                        ;
+; sim_ram/rom_pass.mif                      ;
+; syn/assignment_defaults.qdf               ;
++-------------------------------------------+
+
+
