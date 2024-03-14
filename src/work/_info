@@ -1,0 +1,418 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/sim_LFSR_Four_Screens
+vaccess
+Z0 !s110 1588373014
+!i10b 1
+!s100 ]>M;@kKLJG;ikDb0PIFH[3
+I3IODDzYoF;H4bW@Pc12^Y3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src
+w1588246533
+8C:\intelFPGA_lite\18.1\FinalProject_ShastaGuideBotModelS\src\access.v
+FC:\intelFPGA_lite\18.1\FinalProject_ShastaGuideBotModelS\src\access.v
+L0 8
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1588373014.000000
+!s107 C:\intelFPGA_lite\18.1\FinalProject_ShastaGuideBotModelS\src\access.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\intelFPGA_lite\18.1\FinalProject_ShastaGuideBotModelS\src\access.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vbutton_shaper
+R0
+!i10b 1
+!s100 YzZSXWH[4IiZ9UAIIA05I0
+IG?ClQzXk8lWa@0zEBmf2D1
+R1
+R2
+w1580871905
+8C:\intelFPGA_lite\18.1\FinalProject_ShastaGuideBotModelS\src\button_shaper.v
+FC:\intelFPGA_lite\18.1\FinalProject_ShastaGuideBotModelS\src\button_shaper.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\intelFPGA_lite\18.1\FinalProject_ShastaGuideBotModelS\src\button_shaper.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\intelFPGA_lite\18.1\FinalProject_ShastaGuideBotModelS\src\button_shaper.v|
+!i113 1
+R5
+R6
+vcien_ms
+Z7 !s110 1588373015
+!i10b 1
+!s100 Y]1n_7XZS2F43R9Q9@Ho;3
+INF`^dzcFInQmz=3cgRBi_3
+R1
+R2
+w1588204658
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/cien_ms.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/cien_ms.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/cien_ms.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/cien_ms.v|
+!i113 1
+R5
+R6
+vdigit_timer_mod
+R7
+!i10b 1
+!s100 D^6acdgoW<3P_DiD_K6TY0
+I];@kh^;cPR]bM4kG;JNH?3
+R1
+R2
+w1588242004
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_mod.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_mod.v
+L0 5
+R3
+r1
+!s85 0
+31
+Z8 !s108 1588373015.000000
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_mod.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_mod.v|
+!i113 1
+R5
+R6
+vdigit_timer_top
+R7
+!i10b 1
+!s100 9obPU3MLb@R:K=NLlagMj1
+ICcV>V>WWgdI1IOJH3;2G21
+R1
+R2
+w1588207874
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v
+L0 7
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v|
+!i113 1
+R5
+R6
+vFinalProject_ShastaGuideBotModelS
+R7
+!i10b 1
+!s100 iEX>F_Z`0J^ZJJceU_LTl0
+IF4;gkeRPaWaeCLl=F5_fd3
+R1
+R2
+w1588246814
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v|
+!i113 1
+R5
+R6
+n@final@project_@shasta@guide@bot@model@s
+vGame_Design
+R7
+!i10b 1
+!s100 <hzKoNaclkHn<Cnj==]aZ0
+Ii6Q:kc:=cXkEQ<B;5>HOG3
+R1
+R2
+w1588245536
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Game_Design.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Game_Design.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Game_Design.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Game_Design.v|
+!i113 1
+R5
+R6
+n@game_@design
+vlevel_control
+R7
+!i10b 1
+!s100 Yf;1nAi4W6R?d0C[R=N]j0
+I<C8Pc5O8kVndk`lO5E:e=2
+R1
+R2
+w1588217731
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/level_control.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/level_control.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/level_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/level_control.v|
+!i113 1
+R5
+R6
+vLFSR_Four_Screens
+R7
+!i10b 1
+!s100 23H@5k`[RXHcN0f0VdGcT1
+I>nCoPGe^ciC=@2UN9_DmH3
+R1
+R2
+w1587334466
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/LFSR_Four_Screens.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/LFSR_Four_Screens.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/LFSR_Four_Screens.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/LFSR_Four_Screens.v|
+!i113 1
+R5
+R6
+n@l@f@s@r_@four_@screens
+vlfsr_rng
+R7
+!i10b 1
+!s100 99YK6FmVT=THk=PJi>Qbe0
+IF=4OKXi[`0oH0ZYIDmiOI3
+R1
+R2
+w1586557958
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng.v
+L0 8
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng.v|
+!i113 1
+R5
+R6
+vlfsr_rng_counter
+Z9 !s110 1588373016
+!i10b 1
+!s100 _cNjS`0aZE>PzAhmIf58h1
+IdoH;U@A1TF;YC6<5AMj>j2
+R1
+R2
+w1586964518
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng_counter.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng_counter.v
+L0 8
+R3
+r1
+!s85 0
+31
+Z10 !s108 1588373016.000000
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng_counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng_counter.v|
+!i113 1
+R5
+R6
+vlfsr_uno_ms
+R9
+!i10b 1
+!s100 90MF?Z]PjKdC58F8@5AQY2
+I[2i8k=c;RfQd<Vf_oQ=k@0
+R1
+R2
+w1588204616
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_uno_ms.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_uno_ms.v
+L0 6
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_uno_ms.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_uno_ms.v|
+!i113 1
+R5
+R6
+vRAM
+R9
+!i10b 1
+!s100 zfZI<h?4coWn7z;>Z9KM03
+I3nRUzhEmd:MNT9<CWEXIT2
+R1
+R2
+w1588107237
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/RAM_bb.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/RAM_bb.v
+L0 34
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/RAM_bb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/RAM_bb.v|
+!i113 1
+R5
+R6
+n@r@a@m
+vROM_controller_ID
+Z11 !s110 1588373057
+!i10b 1
+!s100 7S@NLWF4ohM;18ReXlaBk3
+I=z8MliaZX]QagMDCj<Jm71
+R1
+R2
+w1588230651
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_controller_ID.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_controller_ID.v
+L0 7
+R3
+r1
+!s85 0
+31
+Z12 !s108 1588373057.000000
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_controller_ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_controller_ID.v|
+!i113 1
+R5
+R6
+n@r@o@m_controller_@i@d
+vROM_controller_ID_tb
+R11
+!i10b 1
+!s100 WB^1XYTb4P4<BC04YXRIE2
+ILYg5Aa0jF^fDZ>^9E9B1K3
+R1
+R2
+w1588230655
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_controller_ID_tb.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_controller_ID_tb.v
+L0 9
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_controller_ID_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_controller_ID_tb.v|
+!i113 1
+R5
+R6
+n@r@o@m_controller_@i@d_tb
+vROM_ID
+!s110 1588373017
+!i10b 1
+!s100 JJ^O6iDI^2YUQz?f?FS=g3
+IG:@`KiEXJPJZZU4GjelEI2
+R1
+R2
+w1588145637
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v
+Z13 L0 39
+R3
+r1
+!s85 0
+31
+!s108 1588373017.000000
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v|
+!i113 1
+R5
+R6
+n@r@o@m_@i@d
+vROM_PASS
+!s110 1588373045
+!i10b 1
+!s100 OSOoR41m_6;IQ?`cFkU_b3
+IBkoYNRK_h8Zb[1K]V8B=J0
+R1
+R2
+w1588145652
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v
+R13
+R3
+r1
+!s85 0
+31
+!s108 1588373045.000000
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v|
+!i113 1
+R5
+R6
+n@r@o@m_@p@a@s@s
+vSeven_Seg
+R11
+!i10b 1
+!s100 cOB9S^XkW]`S_c?j;n>dl1
+IGDcJHIg<;56P:g7P72IQ>0
+R1
+R2
+w1580188589
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Seven_Seg.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Seven_Seg.v
+L0 6
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Seven_Seg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Seven_Seg.v|
+!i113 1
+R5
+R6
+n@seven_@seg
+vuno_s
+R0
+!i10b 1
+!s100 VUf>MPAI_jV<Qm4:4Y5WZ0
+IB>dk@@824gTWf5F7FD9F?3
+R1
+R2
+w1588204698
+8C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/uno_s.v
+FC:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/uno_s.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/uno_s.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/uno_s.v|
+!i113 1
+R5
+R6

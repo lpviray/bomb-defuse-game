@@ -1,0 +1,127 @@
+C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/FinalProject_ShastaGuideBotModelS.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FinalProject_ShastaGuideBotModelS
+
+Top level modules:
+	FinalProject_ShastaGuideBotModelS
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Game_Design.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Game_Design.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Game_Design
+
+Top level modules:
+	Game_Design
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_PASS.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROM_PASS
+
+Top level modules:
+	ROM_PASS
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/LFSR_Four_Screens.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/LFSR_Four_Screens.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module LFSR_Four_Screens
+
+Top level modules:
+	LFSR_Four_Screens
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng_counter.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng_counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lfsr_rng_counter
+
+Top level modules:
+	lfsr_rng_counter
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/RAM.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/RAM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_mod.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_mod.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module digit_timer_mod
+
+Top level modules:
+	digit_timer_mod
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/ROM_ID.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROM_ID
+
+Top level modules:
+	ROM_ID
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/access.v {1 {vlog -work work -stats=none {C:\intelFPGA_lite\18.1\FinalProject_ShastaGuideBotModelS\src\access.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module access
+
+Top level modules:
+	access
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/RAM_bb.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/RAM_bb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/digit_timer_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module digit_timer_top
+
+Top level modules:
+	digit_timer_top
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/uno_s.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/uno_s.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uno_s
+
+Top level modules:
+	uno_s
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_rng.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lfsr_rng
+
+Top level modules:
+	lfsr_rng
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/button_shaper.v {1 {vlog -work work -stats=none {C:\intelFPGA_lite\18.1\FinalProject_ShastaGuideBotModelS\src\button_shaper.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module button_shaper
+
+Top level modules:
+	button_shaper
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/cien_ms.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/cien_ms.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cien_ms
+
+Top level modules:
+	cien_ms
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Seven_Seg.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/Seven_Seg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Seven_Seg
+
+Top level modules:
+	Seven_Seg
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_uno_ms.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/lfsr_uno_ms.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lfsr_uno_ms
+
+Top level modules:
+	lfsr_uno_ms
+
+} {} {}} C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/level_control.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/18.1/FinalProject_ShastaGuideBotModelS/src/level_control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module level_control
+
+Top level modules:
+	level_control
+
+} {} {}}
