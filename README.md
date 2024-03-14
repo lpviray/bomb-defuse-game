@@ -9,28 +9,28 @@ The design documentation for how the game was tested and developed can be read h
 
 The various instructions a player can receieve can include:<br/>
 
-Stage 1:
-If the display is 0, flip up the 2nd switch.
-If the display is 1, flip up the 2nd switch.
-If the display is 2, flip up the 3rd switch.
+Stage 1:</br>
+If the display is 0, flip up the 2nd switch.</br>
+If the display is 1, flip up the 2nd switch.</br>
+If the display is 2, flip up the 3rd switch.</br>
 If the display is 3, flip up the 4th switch.<br/>
 
-Stage 2: 
-If the display is 0, flip up the switch under the display showing “3”.
-If the display is 1, flip up the switch that was set in Stage 1.
-If the display is 2, flip up the 1st switch.
+Stage 2:</br>
+If the display is 0, flip up the switch under the display showing “3”.</br>
+If the display is 1, flip up the switch that was set in Stage 1.</br>
+If the display is 2, flip up the 1st switch.</br>
 If the display is 3, flip up the 2nd switch.</br>
 
-Stage 3:
-If the display is 0, flip up the switch you flipped in Stage 2.
-If the display is 1, flip up the switch you flipped in Stage 1.
-If the display is 2, flip up the 3rd switch.
+Stage 3:</br>
+If the display is 0, flip up the switch you flipped in Stage 2.</br>
+If the display is 1, flip up the switch you flipped in Stage 1.</br>
+If the display is 2, flip up the 3rd switch.</br>
 If the display is 3, flip up the switch under the display showing “3”.<br/>
 
-Stage 4:
-If the display is 0, flip up the switch you flipped in Stage 1.
-If the display is 1, flip up the 1st switch.
-If the display is 2, flip up the switch you flipped in Stage 2.
+Stage 4:</br>
+If the display is 0, flip up the switch you flipped in Stage 1.</br>
+If the display is 1, flip up the 1st switch.</br>
+If the display is 2, flip up the switch you flipped in Stage 2.</br>
 If the display is 3, flip up the switch you flipped in Stage 3.<br/>
 
 # Additional Features
