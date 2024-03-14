@@ -1,0 +1,8 @@
+{C:/Users/E45T/Documents/Advanced Digital Design - Yuhua Chen/ADD_FINAL_PROJECT/sim_access/access.v} {1 {vlog -work work -stats=none {C:/Users/E45T/Documents/Advanced Digital Design - Yuhua Chen/ADD_FINAL_PROJECT/sim_access/access.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module access
+
+Top level modules:
+	access
+
+} {} {}}
