@@ -40,6 +40,6 @@ If the display is 3, flip up the switch you flipped in Stage 3.<br/>
  • 3 difficulty levels scaling with time available to defuse<br/>
 
 # Technologies Used
- • Scratch 3<br/>
- • HTML5<br/>
+ • Verilog<br/>
+ • Testbench<br/>
  • GitHub<br/>
