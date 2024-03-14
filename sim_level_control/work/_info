@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1
+vlevel_control
+Z0 !s110 1588190291
+!i10b 1
+!s100 AC@>5dMRD8nT=A[l1na:82
+I`kWmU0]E6ZjGVnjj_nLCe0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_level_control
+w1588150480
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_level_control/level_control.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_level_control/level_control.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1588190291.000000
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_level_control/level_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_level_control/level_control.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vlevel_control_tb
+R0
+!i10b 1
+!s100 AGjmVbL`F<O:l2JQh55oi2
+IPm:2TcPC;<MZBYb1@;mzG2
+R1
+R2
+w1588150585
+8C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_level_control/level_control_tb.v
+FC:/Users/rm23u/Documents/ECE5440 ADD/project/sim_level_control/level_control_tb.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_level_control/level_control_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rm23u/Documents/ECE5440 ADD/project/sim_level_control/level_control_tb.v|
+!i113 1
+R5
+R6
