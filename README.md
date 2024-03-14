@@ -42,4 +42,6 @@ If the display is 3, flip up the switch you flipped in Stage 3.<br/>
 # Technologies Used
  • Verilog<br/>
  • Testbench<br/>
+ • Quartus<br/>
+ • ModelSim<br/>
  • GitHub<br/>
